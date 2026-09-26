@@ -1,7 +1,7 @@
 # Videocampagne: Chatlein Montage & Installatie
 
 **Strategische output vóór productie (masterprompt, sectie 16)**
-Status: concept, versie 1, 26-09-2026
+Status: concept, versie 2, 26-09-2026 (verwerkt: toestemming, scope, contact, stem, huisstijl)
 Opdrachtgever: Gerbian Chatlein, eigenaar en keukenmonteur
 
 ---
@@ -37,9 +37,10 @@ Dit document volgt de regel **"geen aannames"**. Daarom staat bij elk feit aange
 | Ervaring | "Meer dan 5 jaar ervaring in de keukenmontagebranche" (eigen profieltekst) | [CONTROLEREN] |
 | Beoordeling Werkspot | 4,8 / 5 | [BEVESTIGD]; aantal reviews [CONTROLEREN] |
 | Aangetoonde werkzaamheden (uit reviews) | Keukenkasten plaatsen · inbouwapparatuur (kookplaat, oven, vaatwasser) · nieuw werkblad monteren · extra werkblad en bovenkast · vaatwasser aansluiten | [BEVESTIGD] |
-| Niet aangetoond | Leidingwerk verplaatsen, afvoer aanpassen, elektra/wandcontactdozen, stucwerk, tegelwerk, verlichting | [DOOR GERBIAN BEVESTIGEN]. "Installatie" in de naam en "alles rondom je keuken" wijzen erop, maar bewijs ontbreekt |
+| Kernactiviteit | **Keukenmontage**: door opdrachtgever bevestigd (26-09-2026) | [BEVESTIGD] |
+| Niet bevestigd | Leidingwerk verplaatsen, afvoer aanpassen, elektra/wandcontactdozen, stucwerk, tegelwerk, verlichting | **Niet in de video.** Alleen toevoegen als Gerbian dit later expliciet bevestigt |
 | Certificeringen, garanties, KvK | Niet gevonden | Niet noemen, tenzij aangeleverd |
-| Contactgegevens | Niet geverifieerd | **Niet** in de video zetten tot Gerbian ze aanlevert |
+| Contactgegevens | Instagram **@chatleingroup** ("Chatlein Montage & Installatie Bedrijf") en Werkspot-profiel gevonden. Vestiging: Vossenzoom, Pijnacker (huisnummer niet gevonden). **Geen telefoonnummer of KvK-nummer gevonden** dat aantoonbaar bij dit bedrijf hoort | Zie sectie 20 |
 
 ---
 
@@ -167,7 +168,7 @@ Variant voor de lange versie: *"Van levering tot laatste detail. Tot alles klopt
 | 2. De twijfel | Onzekerheid | – | Leidingen uit de muur, vragen in tekst |
 | 3. Gerbian neemt het over | Opluchting | Komt binnen, kijkt rond, meet | Gerbian met rolmaat en keukenplan |
 | 4. Voorbereiding | Vertrouwen | Controleert maten en aansluitpunten, signaleert afwijkingen | Laser, rolmaat, notities |
-| 5. Techniek* | Zekerheid | Aansluitingen voorbereiden | *Alleen tonen na bevestiging* |
+| 5. Techniek | – | *Vervalt: valt buiten de bevestigde scope (keukenmontage)* | – |
 | 6. Montage | Voortgang | Kasten, waterpas, werkblad, apparatuur | Macro's gereedschap |
 | 7. Maatwerk | Bewondering | Oplossing waar de praktijk afwijkt | Passtuk op maat zagen |
 | 8. Afwerking | Trots | Fronten afstellen, grepen uitlijnen, kitten, plinten | Close-ups detail |
@@ -226,7 +227,7 @@ Richtlijn: Gerbian spreekt in eigen woorden. De tekst hieronder is een **richtin
 | 8 | VO: "Goed gemonteerd is nog niet hetzelfde als goed afgewerkt." |
 | 10–11 | In beeld, rustig: "Een keuken moet niet alleen mooi zijn op de dag dat hij klaar is. Alles moet gewoon kloppen." |
 
-**Avatar of stemkloon:** niet adviseren. Echte opnames van Gerbian zijn geloofwaardiger en goedkoper. Als er toch een geanimeerde versie komt: alleen met schriftelijke toestemming van Gerbian voor beeld én stem, en duidelijk gelabeld als AI-bewerkt waar platforms dat vereisen.
+**Beeld en stem:** Gerbian heeft toestemming gegeven voor het gebruik van zijn beeld en een stemkloon (26-09-2026). Uitwerking in sectie 26.
 
 ---
 
@@ -262,7 +263,8 @@ Richtlijn: Gerbian spreekt in eigen woorden. De tekst hieronder is een **richtin
 - ★★★★★ "[letterlijke reviewquote]": Werkspot, 4,8 / 5 *(cijfer op draaidag controleren)*
 - Tot alles klopt.
 - Nieuwe keuken gepland? Bespreek je montage met Chatlein.
-- [Contactgegevens, pas invullen na aanlevering door Gerbian]
+- Instagram: @chatleingroup *(geverifieerd)*
+- Tel.: [TELEFOONNUMMER: invullen uit KvK-uittreksel of Google-bedrijfsprofiel, zie sectie 20]
 
 Typografie: één schreefloze letter (bijv. Inter of Söhne), wit met 60 % zwarte schaduw, hoofdletters alleen voor de stapnummers.
 
@@ -353,7 +355,19 @@ Alles in 4K 10-bit, log-profiel, 25p voor normale snelheid. Kader zó dat zowel 
 **Hoofd-CTA (op eindkaart):**
 > Nieuwe keuken gepland?
 > Bespreek je keukenmontage met **Chatlein**.
-> [Instagram-handle / telefoon / website: **alleen na aanlevering en controle**]
+> **@chatleingroup** · [TELEFOONNUMMER]
+
+**Contactgegevens: wat er gevonden is (26-09-2026)**
+
+| Gegeven | Bevinding | Gebruiken? |
+|---|---|---|
+| Instagram | **@chatleingroup**, profielnaam "Chatlein Montage & Installatie Bedrijf" | **Ja** |
+| Werkspot | werkspot.nl/profiel/chatlein-montage-installatie | Ja, als secundaire route ("Bekijk de reviews op Werkspot") |
+| Vestiging | Vossenzoom, Pijnacker | **Nee.** Een woonstraat. Een huisadres hoort niet in een social-video |
+| Telefoonnummer | Niet gevonden voor dit bedrijf. Wel gevonden: een 06-nummer van **"Klussenbedrijf Chatlein"**, Houtmankade, **Amsterdam**. Dat is een ander bedrijf op een ander adres en is **niet** aantoonbaar van Gerbian | **Nee**, tenzij Gerbian bevestigt dat het zijn nummer is |
+| KvK-nummer | kvk.nl, OpenKvK en Drimble waren vanuit de onderzoeksomgeving niet bereikbaar | Niet nodig in de video. Wel handig als controle van naam en nummer |
+
+**Waarom geen nummer "uit Google" invullen?** Een verkeerd nummer in een betaalde advertentie stuurt leads naar iemand anders en is achteraf niet te herstellen in al gedeelde video's. Invullen kost Gerbian één minuut; raden kost klanten.
 
 Advies: gebruik **één** contactroute in de eindkaart. Liefst de route die Gerbian het snelst beantwoordt (bijv. WhatsApp of Instagram-DM).
 
@@ -386,7 +400,7 @@ Doellengte **85 sec**. Zelfde opbouw als de hero, met drie extra lagen:
 
 *(Gerbian moet bevestigen dat dit zijn werkwijze is.)*
 
-**Als het uitgebreide pakket bevestigd is**, voeg dan een scène "Techniek" toe (0:18–0:25): aansluitpunten, leidingwerk en elektra, met VO *"Water, afvoer, stroom: ik zorg dat het op de goede plek zit."*
+**Scope:** Gerbian heeft keukenmontage bevestigd. Er komt dus géén scène over leidingwerk, elektra, stucwerk of tegelwerk. Aansluiten van inbouwapparatuur (kookplaat, oven, vaatwasser) mag wel in beeld: dat staat in de reviews.
 
 ---
 
@@ -437,7 +451,7 @@ Doellengte **85 sec**. Zelfde opbouw als de hero, met drie extra lagen:
 | Wordt ontzorging zichtbaar? | Ja: stappen 1–4, nalopen met klant, leveringsreview |
 | Wordt vakmanschap bewezen? | Ja: macro's, passtuk, greep uitlijnen, voor/na |
 | Zijn reviews echt? | **Pas na letterlijke controle op Werkspot** (open actie) |
-| Zijn werkzaamheden correct? | Ja voor montage/werkblad/apparatuur; techniek en afwerking **pending bevestiging** |
+| Zijn werkzaamheden correct? | Ja: alleen keukenmontage (bevestigd), werkblad en inbouwapparatuur (uit reviews) |
 | Is afwerking zichtbaar? | Ja: scène 8, advertentie C |
 | Genoeg emotionele transformatie? | Ja: dozen → koffie in afgewerkte keuken |
 | Begrijpt de kijker wat Chatlein doet? | Ja: stapnummers en slottekst |
@@ -452,12 +466,71 @@ Doellengte **85 sec**. Zelfde opbouw als de hero, met drie extra lagen:
 
 | # | Actie | Wie |
 |---|---|---|
-| 1 | Bevestigen: welke naam in logo en CTA ("Chatlein Montage & Installatie" of "Chatlein Montage Keuken & Installatie")? | Gerbian |
-| 2 | Bevestigen: welke werkzaamheden levert hij zelf (leidingwerk, afvoer, elektra, stucwerk, tegelwerk, verlichting)? | Gerbian |
-| 3 | Aanleveren: contactgegevens voor de CTA | Gerbian |
+| 1 | Logo aanleveren als SVG of PNG met transparante achtergrond; daarmee ligt ook de naam in beeld vast | Gerbian |
+| 2 | ~~Scope bevestigen~~: keukenmontage bevestigd (26-09) | ✓ |
+| 3 | Telefoonnummer bevestigen (staat op KvK-uittreksel of in de eigen telefoon; het Amsterdamse nummer van "Klussenbedrijf Chatlein" is **niet** gebruiken tenzij het van Gerbian is) | Gerbian |
 | 4 | Reviewquotes letterlijk kopiëren en screenshotten; reviewaantal van die dag noteren | Productie |
 | 5 | Instagram-archief doorzoeken op voor/na- en projectbeelden | Videograaf |
 | 6 | Een lopend project vinden waar de klant wil meewerken; toestemmingsformulier (beeld, naam, woning) | Gerbian + productie |
 | 7 | Advies: Google-bedrijfsprofiel en eenvoudige landingspagina vóór lancering | Gerbian |
 | 8 | Advies: reageren op de negatieve Werkspot-review | Gerbian |
-| 9 | Schriftelijke toestemming voor gebruik van beeld en stem van Gerbian (en géén stemkloon zonder expliciete toestemming) | Productie |
+| 9 | Mondelinge toestemming voor beeld en stemkloon ontvangen (26-09). **Vastleggen op papier** met het formulier in sectie 26 | Productie + Gerbian |
+| 10 | 10 minuten schone stemopname van Gerbian voor de kloon (sectie 26) | Productie |
+| 11 | Merkkleuren uit het logo halen en invullen in sectie 27 | Motion designer |
+
+---
+
+## 26. Stem en stemkloon
+
+### Uitgangspunt
+Gerbian geeft toestemming voor een stemkloon. **We klonen de stem van Gerbian zelf** en regisseren die richting een warme, joviale, nuchtere klusstijl.
+
+**Geen imitatie van John Williams of een andere bekende stem.** De wens was een stem "vergelijkbaar met John van *Help, mijn man is klusser*". We klonen of imiteren die stem niet, om drie redenen:
+1. John Williams heeft daar geen toestemming voor gegeven. Het nabootsen van een herkenbare stem van een bekende Nederlander voor reclame raakt aan zijn portretrecht en persoonlijkheidsrechten en is juridisch riskant.
+2. Kijkers kunnen denken dat hij Chatlein aanbeveelt. Dat is misleidende reclame (Reclamecode, oneerlijke handelspraktijken).
+3. Stemplatforms zoals ElevenLabs verbieden het klonen van de stem van iemand anders zonder diens toestemming.
+
+Wat we wel meenemen: de **eigenschappen** die zo'n presentatorstem prettig maken, als regie voor Gerbians eigen stem.
+
+### Stemregie (voor Gerbians eigen stem of kloon)
+| Eigenschap | Richting |
+|---|---|
+| Karakter | Hartelijk, nuchter, "ik regel het wel", een vakman die graag uitlegt |
+| Energie | Opgewekt maar niet schreeuwerig; een glimlach die je hoort |
+| Tempo | Rustig tot middel, ± 150 woorden per minuut; pauze na de kernzinnen |
+| Toonhoogte | Natuurlijk, iets lager in de slotzin ("Alles moet gewoon kloppen.") |
+| Taal | Spreektaal, korte zinnen, "je" in plaats van "u" |
+| Niet | Geen radiostem, geen verkoperstoon, geen overdreven enthousiasme |
+
+### Werkwijze kloon
+1. **Opname:** 10–15 minuten Gerbian in een stille ruimte (kleding in een kast werkt als geluidsdemping), lavalier of USB-condensatormicrofoon, 48 kHz / 24 bit. Laat hem vrij vertellen over zijn werk, plus de VO-teksten 3× met wisselende energie.
+2. **Kloon:** professionele kloon in een platform dat een toestemmingsverificatie van de stemeigenaar vereist (bijv. ElevenLabs Professional Voice Cloning). Gerbian doorloopt die verificatie zelf.
+3. **Gebruik:** alleen voor de voice-over buiten beeld. **Waar Gerbian in beeld praat, gebruiken we zijn echte opname**: een kloon op bewegende lippen valt op en maakt het "AI-reclame".
+4. **Controle:** Gerbian luistert de eindmix af en keurt goed.
+5. **Label:** zet in de caption "Voice-over deels AI-ondersteund met de stem van Gerbian", en gebruik het AI-label van Meta en TikTok als de kloon het merendeel van de stem is.
+
+### Toestemmingsformulier (kort, laten tekenen)
+> Ik, Gerbian Chatlein, geef [productiebedrijf] toestemming om mijn beeld en een digitale kloon van mijn stem te gebruiken voor de videocampagne van Chatlein Montage & Installatie, op eigen kanalen en in betaalde advertenties. De stemkloon wordt alleen gebruikt voor teksten die ik vooraf heb goedgekeurd en wordt na afloop van de campagne verwijderd, tenzij ik anders aangeef. Ik kan deze toestemming schriftelijk intrekken voor toekomstig gebruik.
+>
+> Datum: ______  Handtekening: ______
+
+---
+
+## 27. Huisstijl: logo en kleuren
+
+**Status:** het logo en de kleuren staan op Instagram (@chatleingroup / @dekeukenarts), maar die pagina's waren vanuit de onderzoeksomgeving niet te openen. Er is dus **nog geen logobestand of kleurcode vastgesteld**. We verzinnen geen kleuren.
+
+**Aanleveren:** logo als SVG (of PNG ≥ 2000 px, transparante achtergrond). De motion designer haalt de kleurcodes uit het logo en vult deze tabel in:
+
+| Token | Gebruik in de video | Hex |
+|---|---|---|
+| Primair | Stapnummers (1 · Voorbereiden …), eindkaart-achtergrond | [uit logo] |
+| Accent | Sterren in de reviewkaart, onderstreping kernwoord in ondertitels | [uit logo] |
+| Neutraal donker | Tekstschaduw, reviewkaart-achtergrond (80 % dekking) | [uit logo, of #111111] |
+| Neutraal licht | Ondertiteltekst | #FFFFFF |
+
+**Regels voor het logo in beeld:**
+- **Eindkaart:** logo gecentreerd, maximaal 40 % van de beeldbreedte, met minimaal de hoogte van de "C" aan vrije ruimte rondom.
+- **Tijdens de video:** geen permanent logo in de hoek (dat voelt als reclame en valt weg onder de UI). Wel een klein logo op de reviewkaart en de naamtitel.
+- **Op locatie:** laat echte merkdragers terugkomen als die er zijn, zoals een bedrijfsbus, werkkleding of gereedschapskist met logo. Dat is sterker dan een grafisch logo.
+- **Contrast:** als de primaire kleur licht is, zet het logo op een donker vlak. Controleer de leesbaarheid op een telefoon op halve helderheid.
