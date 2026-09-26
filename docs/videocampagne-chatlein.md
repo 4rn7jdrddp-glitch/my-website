@@ -91,6 +91,21 @@ Actie voor het productieteam: maak op draaidag -1 schermopnames van bron 1, 2 en
 | **Detail** | "Oog voor detail" bij de werkbladmontage | Bewijs voor precisie |
 | **Breed pakket** | Kasten + kookplaat + oven + vaatwasser in één opdracht | Bewijs voor "één vakman" |
 
+**Google-reviews (aangeleverd door de opdrachtgever, 26-09-2026, alle 5 sterren, letterlijk):**
+
+> "Zeer vakkundig geholpen, heel professioneel en zeer vriendelijk personeel, keuken zeer mooi geworden ,echte aanrader" *(± 5 maanden geleden)*
+
+> "Me keuken gekocht bij keukenwarenhuis. Vanaf dag 1 tot de plaatsing had ik contact met chatleingroup. De monteur heeft ons super geholpen en begeleid met advies en raad. Hij nam ons echt de stress weg. Hele goede communicatie en service. Hij komt echt ze afspraken na."
+
+> "Prachtige keuken geinstalleerd door Gerbian. Is meerdere keren teruggekomen om nalevering te installeren (bestelfout vd keukenzaak). Onwijs goed geholpen, makkelijk om afspraak mee te maken en fijn als mens om in huis te hebben. Let op details en gaat door tot het echt goed is. Resultaat en service top!"
+
+**Waarom deze reviews goud waard zijn:** ze bevestigen de positionering bijna letterlijk: begeleiding "vanaf dag 1 tot de plaatsing" (klantreis), "nam ons echt de stress weg" (ontzorging), "meerdere keren teruggekomen" bij een fout van de keukenzaak (probleemoplossing) en **"gaat door tot het echt goed is"** (= de belofte *Tot alles klopt*).
+
+**Gebruikte fragmenten in de video** (letterlijk, zonder de typfouten uit de rest van de tekst):
+1. "Hij nam ons echt de stress weg."
+2. "Is meerdere keren teruggekomen om nalevering te installeren."
+3. "Let op details en gaat door tot het echt goed is."
+
 **Negatieve review (ook openbaar zichtbaar):** een klant schrijft dat grepen scheef, niet waterpas en niet in het midden van de deur zaten, en dat opmerkingen tijdens het werk slecht werden ontvangen.
 
 **Wat betekent dat voor de campagne?**
@@ -275,6 +290,8 @@ Typografie en kleuren: zie sectie 27 (titels in een schreeflettertype passend bi
 ---
 
 ## 16. Reviewmomenten / social proof
+
+**Update 26-09:** in de video gebruikt: de drie Google-fragmenten uit sectie 4 (5 sterren) + "4,8 / 5 op Werkspot". De Werkspot-quote over de vaatwasser is vervallen.
 
 Maximaal **drie** bewijsmomenten, in deze volgorde:
 
@@ -569,3 +586,24 @@ Wat we wel meenemen: de **eigenschappen** die zo'n presentatorstem prettig maken
 - **Titels, stapnummers, eindkaart:** een hoog-contrast schreeflettertype dat aansluit bij het woordmerk, bijv. **Bodoni Moda** of **Playfair Display** (beide gratis via Google Fonts), in hoofdletters met iets ruimere spatiëring.
 - **Ondertitels:** een schreefloze letter voor leesbaarheid op mobiel (**Inter**, semibold), wit met zachte zwarte schaduw.
 - **Kernwoord in ondertitels:** onderstreept met een dunne gele lijn (`#FFDE54`) in plaats van een andere kleur tekst.
+
+---
+
+## 28. Opgeleverde video (versie 1, motion graphics)
+
+**Bestand:** [`video/chatlein-hero-9x16.mp4`](../video/chatlein-hero-9x16.mp4): 1080 × 1920, 30 fps, 53 sec, H.264 + AAC.
+
+Gemaakt met wat er nu beschikbaar is: logo, merkkleuren, bevestigde feiten en echte reviews. **Er zit nog geen echt beeldmateriaal of stem van Gerbian in.** De keuken is een getekende animatie die in vier stappen wordt opgebouwd. De video werkt volledig zonder geluid; de audio is een rustige, zelf gegenereerde soundtrack met werkgeluid-accenten (vrij van licenties).
+
+| Tijd | Scène |
+|---|---|
+| 0:00–0:04 | Hook: waterpas, bel schuift naar het midden: "Een keuken kopen is één ding." |
+| 0:04–0:08 | "Zorgen dat alles klopt? Dat is een **vak apart**." |
+| 0:08–0:13 | De vragen: aansluiting, past alles, wie lost het op |
+| 0:13–0:17 | Gerbian Chatlein · keukenmonteur: "Ik kijk verder dan de kasten." |
+| 0:17–0:35 | Keuken bouwt zich op: 1 Voorbereiden · 2 Monteren · 3 Oplossen (passtuk) · 4 Afwerken (fronten, grepen op één lijn, plint, kitnaad) |
+| 0:35–0:44 | Drie 5-sterren Google-reviews + 4,8 / 5 op Werkspot |
+| 0:44–0:48 | Licht aan, koffie: **Tot alles klopt.** |
+| 0:48–0:53 | Logo, "Nieuwe keuken gepland? Stuur Gerbian een appje", **06 49 11 03 60**, WhatsApp · @chatleingroup |
+
+**Volgende versie:** echte opnames volgens de shotlist (sectie 18) en de stem van Gerbian (sectie 26) op dezelfde tijdlijn. De graphics uit deze versie blijven herbruikbaar. Broncode: `video/src/render.py`.
