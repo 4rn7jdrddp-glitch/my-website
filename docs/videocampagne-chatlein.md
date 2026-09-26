@@ -264,7 +264,7 @@ Richtlijn: Gerbian spreekt in eigen woorden. De tekst hieronder is een **richtin
 - Tot alles klopt.
 - Nieuwe keuken gepland? Bespreek je montage met Chatlein.
 - Instagram: @chatleingroup *(geverifieerd)*
-- Tel.: [TELEFOONNUMMER: invullen uit KvK-uittreksel of Google-bedrijfsprofiel, zie sectie 20]
+- Tel./WhatsApp: 06 49 11 03 60
 
 Typografie: één schreefloze letter (bijv. Inter of Söhne), wit met 60 % zwarte schaduw, hoofdletters alleen voor de stapnummers.
 
@@ -355,7 +355,7 @@ Alles in 4K 10-bit, log-profiel, 25p voor normale snelheid. Kader zó dat zowel 
 **Hoofd-CTA (op eindkaart):**
 > Nieuwe keuken gepland?
 > Bespreek je keukenmontage met **Chatlein**.
-> **@chatleingroup** · [TELEFOONNUMMER]
+> **06 49 11 03 60** · @chatleingroup
 
 **Contactgegevens: wat er gevonden is (26-09-2026)**
 
@@ -364,7 +364,8 @@ Alles in 4K 10-bit, log-profiel, 25p voor normale snelheid. Kader zó dat zowel 
 | Instagram | **@chatleingroup**, profielnaam "Chatlein Montage & Installatie Bedrijf" | **Ja** |
 | Werkspot | werkspot.nl/profiel/chatlein-montage-installatie | Ja, als secundaire route ("Bekijk de reviews op Werkspot") |
 | Vestiging | Vossenzoom, Pijnacker | **Nee.** Een woonstraat. Een huisadres hoort niet in een social-video |
-| Telefoonnummer | Niet gevonden voor dit bedrijf. Wel gevonden: een 06-nummer van **"Klussenbedrijf Chatlein"**, Houtmankade, **Amsterdam**. Dat is een ander bedrijf op een ander adres en is **niet** aantoonbaar van Gerbian | **Nee**, tenzij Gerbian bevestigt dat het zijn nummer is |
+| Telefoonnummer | **+31 6 49 11 03 60**, aangeleverd door de opdrachtgever (26-09-2026). In beeld als **06 49 11 03 60** (herkenbaarder voor Nederlandse kijkers); in links als `tel:+31649110360` en `https://wa.me/31649110360` | **Ja** |
+| Ander nummer | Het 06-nummer van "Klussenbedrijf Chatlein" (Houtmankade, Amsterdam) hoort bij een ander bedrijf | **Nee** |
 | KvK-nummer | kvk.nl, OpenKvK en Drimble waren vanuit de onderzoeksomgeving niet bereikbaar | Niet nodig in de video. Wel handig als controle van naam en nummer |
 
 **Waarom geen nummer "uit Google" invullen?** Een verkeerd nummer in een betaalde advertentie stuurt leads naar iemand anders en is achteraf niet te herstellen in al gedeelde video's. Invullen kost Gerbian één minuut; raden kost klanten.
@@ -468,7 +469,7 @@ Doellengte **85 sec**. Zelfde opbouw als de hero, met drie extra lagen:
 |---|---|---|
 | 1 | Logo aanleveren als SVG of PNG met transparante achtergrond; daarmee ligt ook de naam in beeld vast | Gerbian |
 | 2 | ~~Scope bevestigen~~: keukenmontage bevestigd (26-09) | ✓ |
-| 3 | Telefoonnummer bevestigen (staat op KvK-uittreksel of in de eigen telefoon; het Amsterdamse nummer van "Klussenbedrijf Chatlein" is **niet** gebruiken tenzij het van Gerbian is) | Gerbian |
+| 3 | ~~Telefoonnummer~~: 06 49 11 03 60 aangeleverd (26-09). Nog checken: werkt WhatsApp op dit nummer? Anders "WhatsApp" weglaten uit de on-screen tekst | Gerbian |
 | 4 | Reviewquotes letterlijk kopiëren en screenshotten; reviewaantal van die dag noteren | Productie |
 | 5 | Instagram-archief doorzoeken op voor/na- en projectbeelden | Videograaf |
 | 6 | Een lopend project vinden waar de klant wil meewerken; toestemmingsformulier (beeld, naam, woning) | Gerbian + productie |
