@@ -1,0 +1,282 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Caribbean Public Solutions — ad</title>
+<style>
+@font-face { font-family: 'Fraunces'; font-style: normal; font-weight: 100 900; src: url('../../docs/assets/fonts/fraunces-latin-opsz-normal.woff2') format('woff2'); }
+@font-face { font-family: 'Fraunces'; font-style: italic; font-weight: 100 900; src: url('../../docs/assets/fonts/fraunces-latin-opsz-italic.woff2') format('woff2'); }
+@font-face { font-family: 'Inter Tight'; font-weight: 100 900; src: url('../../docs/assets/fonts/inter-tight-latin-wght-normal.woff2') format('woff2'); }
+:root { --ocean: #071e28; --orange: #f26a36; --apricot: #ffb68e; --paper: #f7f4ee; --petrol: #24565b; --u: 1vmin; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html, body { width: 100%; height: 100%; overflow: hidden; background: var(--ocean); color: var(--paper); font-family: 'Inter Tight', sans-serif; -webkit-font-smoothing: antialiased; }
+.abs { position: absolute; }
+.serif { font-family: 'Fraunces', serif; font-variation-settings: 'opsz' 144; letter-spacing: -0.03em; }
+
+/* ---- world (map in CSS 3D) ---- */
+#world { position: absolute; inset: 0; perspective: 170vmin; perspective-origin: 50% 40%; overflow: hidden; }
+#plane { position: absolute; inset: 0; transform-style: preserve-3d; }
+#layers { position: absolute; left: 50%; top: 50%; transform-style: preserve-3d; }
+#layers svg, #layers .pin { position: absolute; left: 0; top: 0; overflow: visible; }
+#sea { position: absolute; inset: -20%; background: radial-gradient(60% 55% at var(--gx, 60%) var(--gy, 55%), #123e4c 0%, #0a2833 40%, var(--ocean) 75%); }
+#grain { position: absolute; inset: 0; opacity: .07; mix-blend-mode: overlay; pointer-events: none; }
+#vignette { position: absolute; inset: 0; background: radial-gradient(120% 95% at 50% 45%, transparent 50%, rgba(3,14,19,.85) 100%); }
+#scrim { position: absolute; inset: 0; background: var(--ocean); opacity: 0; }
+
+/* ---- type ---- */
+.brand { position: absolute; display: flex; align-items: center; gap: 1.4vmin; font-weight: 600; font-size: 2.1vmin; letter-spacing: -.01em; }
+.brand svg { width: 4vmin; height: 4vmin; }
+.kicker { font-weight: 600; font-size: 1.9vmin; letter-spacing: .18em; text-transform: uppercase; color: var(--apricot); display: flex; align-items: center; gap: 1.6vmin; }
+.kicker::before { content: ''; width: 5vmin; height: 1px; background: currentColor; }
+.big { font-size: 11vmin; line-height: .95; font-weight: 340; }
+.it { font-style: italic; color: var(--orange); font-weight: 330; }
+.center { left: 0; right: 0; text-align: center; }
+.line { display: block; }
+.mask { display: block; overflow: hidden; padding-bottom: .12em; margin-bottom: -.12em; }
+.mask > span { display: block; }
+#hookNum { font-family: 'Fraunces', serif; font-size: 2.4vmin; color: var(--apricot); }
+.svc { position: absolute; border-top: 1px solid rgba(247,244,238,.25); padding-top: 2vmin; }
+.svc .n { font-family: 'Fraunces', serif; color: var(--orange); font-size: 3vmin; }
+.svc .t { font-family: 'Fraunces', serif; font-size: 4vmin; line-height: 1.05; margin: 1vmin 0 1.2vmin; letter-spacing: -.02em; }
+.svc .d { color: rgba(247,244,238,.72); font-size: 2.1vmin; line-height: 1.4; }
+.node { position: absolute; width: 3.4vmin; height: 3.4vmin; margin: -1.7vmin 0 0 -1.7vmin; border-radius: 50%; border: 2px solid rgba(255,182,142,.6); background: var(--ocean); }
+.node-label { position: absolute; transform: translateX(-50%); text-align: center; white-space: nowrap; }
+.node-label .n { font-family: 'Fraunces', serif; font-size: 2.6vmin; color: var(--apricot); }
+.node-label .t { font-family: 'Fraunces', serif; font-size: 3.4vmin; letter-spacing: -.02em; }
+.pill { display: inline-flex; align-items: center; gap: 1.6vmin; padding: 2.2vmin 4.4vmin; border-radius: 99vmin; background: var(--orange); color: var(--ocean); font-weight: 650; font-size: 3.2vmin; }
+.map-label { position: absolute; transform: translate(-50%, -100%); padding: .5vmin 1.2vmin; background: var(--apricot); color: var(--ocean); font-weight: 700; font-size: 1.7vmin; letter-spacing: .14em; text-transform: uppercase; white-space: nowrap; }
+</style>
+</head>
+<body>
+<div id="world">
+  <div id="sea"></div>
+  <div id="plane"><div id="layers"></div></div>
+  <div id="vignette"></div>
+</div>
+<div id="scrim"></div>
+<div id="endScrim" style="position:absolute;inset:0;opacity:0;background:radial-gradient(60% 55% at 50% 48%, rgba(7,30,40,.82), rgba(7,30,40,.35) 70%, transparent)"></div>
+<div id="ui"></div>
+<svg id="grain" width="100%" height="100%"><filter id="n"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" stitchTiles="stitch"/></filter><rect width="100%" height="100%" filter="url(#n)"/></svg>
+
+<script>
+// Deterministic ad timeline: renderFrame(t) sets the whole frame from time t (seconds).
+const $ = (s) => document.querySelector(s);
+const clamp = (v, a = 0, b = 1) => Math.min(b, Math.max(a, v));
+const lerp = (a, b, t) => a + (b - a) * t;
+const eOut = (t) => 1 - Math.pow(1 - clamp(t), 3);
+const eInOut = (t) => { t = clamp(t); return t < .5 ? 4 * t * t * t : 1 - Math.pow(-2 * t + 2, 3) / 2; };
+const prog = (t, a, d) => clamp((t - a) / d);
+// visibility window with enter/exit easing
+const win = (t, a, b, fi = .5, fo = .4) => Math.min(eOut(prog(t, a, fi)), 1 - eInOut(prog(t, b - fo, fo)));
+
+let S, W, H, V, U = 110, BX, BZ, arcs = [], els = {};
+
+window.init = async ({ strings, map, bonaire, targets, vertical }) => {
+  S = strings; V = vertical; W = innerWidth; H = innerHeight;
+  [BX, BZ] = bonaire;
+  const { x0, x1, z0, z1 } = map.size;
+  const px = (x) => ((x - x0) * U).toFixed(1), pz = (z) => ((z - z0) * U).toFixed(1);
+  const w = (x1 - x0) * U, h = (z1 - z0) * U;
+  const pathOf = (k) => map.hi.filter((p) => p.k === k).map((p) => { let d = ''; for (let i = 0; i < p.r.length; i += 2) d += (i ? 'L' : 'M') + px(p.r[i]) + ' ' + pz(p.r[i + 1]); return d + 'Z'; }).join('');
+  const layer = (z, inner, cls = '') => `<svg class="${cls}" width="${w}" height="${h}" viewBox="0 0 ${w} ${h}" style="transform: translate(${x0 * U}px, ${z0 * U}px) translateZ(${z}px)">${inner}</svg>`;
+  let grat = '';
+  for (let x = Math.ceil(x0 / 2.4) * 2.4; x <= x1; x += 2.4) grat += `M${px(x)} 0V${h}`;
+  for (let z = Math.ceil(z0 / 2.4) * 2.4; z <= z1; z += 2.4) grat += `M0 ${pz(z)}H${w}`;
+  const land = pathOf('i'), main = pathOf('m'), bon = pathOf('b');
+  arcs = targets.map(({ p }, i) => {
+    const d = Math.hypot(p[0] - BX, p[1] - BZ);
+    return { d: `M${px(BX)} ${pz(BZ)}Q${px((BX + p[0]) / 2)} ${pz((BZ + p[1]) / 2 - d * .35)} ${px(p[0])} ${pz(p[1])}`, end: p, i };
+  });
+  const arcSvg = arcs.map((a) => `<path id="arc${a.i}" d="${a.d}" pathLength="1" stroke-dasharray="1 1" stroke-dashoffset="1"/>`).join('');
+  const dots = arcs.map((a) => `<circle id="dot${a.i}" cx="${px(a.end[0])}" cy="${pz(a.end[1])}" r="${7*U/60}" opacity="0"/>`).join('');
+  $('#layers').innerHTML =
+    layer(0, `<path d="${grat}" stroke="#24565B" stroke-opacity=".45" stroke-width="${2*U/60}" fill="none"/>`) +
+    layer(1, `<path d="${main}" fill="#0c2a31"/><path d="${land}" fill="#123a41"/>`) +
+    layer(7, `<path d="${main}" fill="#1a484f"/><path d="${land}" fill="#2f6b6f"/>`) +
+    layer(9, `<g fill="none" stroke="#FFB68E" stroke-width="${3.2*U/60}" stroke-linecap="round" style="filter: drop-shadow(0 0 ${6*U/60}px rgba(255,182,142,.6))">${arcSvg}</g><g fill="#FFB68E">${dots}</g>`, 'arcs') +
+    layer(12, `<path d="${bon}" fill="#F26A36" stroke="#F26A36" stroke-width="${3*U/60}"/>`) +
+    `<div class="pin" id="glow" style="width:0;height:0;transform: translate(${BX * U}px, ${BZ * U}px) translateZ(10px)"><div id="glowIn" style="position:absolute;left:${-260*U/60}px;top:${-260*U/60}px;width:${520*U/60}px;height:${520*U/60}px;border-radius:50%;background:radial-gradient(circle, rgba(242,106,54,.75), rgba(242,106,54,.18) 30%, transparent 65%)"></div>
+       <div id="ring1" style="position:absolute;left:${-40*U/60}px;top:${-40*U/60}px;width:${80*U/60}px;height:${80*U/60}px;border-radius:50%;border:${3*U/60}px solid #F26A36"></div>
+       <div id="ring2" style="position:absolute;left:${-40*U/60}px;top:${-40*U/60}px;width:${80*U/60}px;height:${80*U/60}px;border-radius:50%;border:${3*U/60}px solid #F26A36"></div></div>` +
+    `<div class="pin" id="bpin" style="width:1px;height:1px;transform: translate(${BX * U}px, ${BZ * U}px) translateZ(14px)"></div>`;
+
+  const logo = `<svg viewBox="0 0 40 40"><circle cx="20" cy="20" r="18.5" fill="none" stroke="#F7F4EE" stroke-opacity=".5"/><path d="M6 25c6-5 11-7 14-7s8 2 14 7" fill="none" stroke="#F7F4EE" stroke-opacity=".5"/><circle cx="20" cy="18" r="4.2" fill="#F26A36"/></svg>`;
+  const L = V ? { pad: 7, top: 9 } : { pad: 7, top: 7 };
+  const svcHTML = S.services.map((s, i) => `<div class="svc" id="svc${i}"><div class="n">0${i + 1}</div><div class="t">${s.name}</div><div class="d">${s.desc}</div></div>`).join('');
+  const nodes = S.steps.map((s, i) => `<div class="node" id="node${i}"></div><div class="node-label" id="nl${i}"><div class="n">0${i + 1}</div><div class="t">${s}</div></div>`).join('');
+  $('#ui').innerHTML = `
+    <div class="map-label" id="blabel" style="font-size:${V ? 2.2 : 1.8}vmin">${S.bonaire}</div>
+    <div class="brand" id="brand" style="left:${L.pad}vw;top:${L.top}vh">${logo}<span>Caribbean Public Solutions</span></div>
+    <div class="abs" id="hook" style="left:${L.pad}vw;right:${L.pad}vw;top:${V ? 36 : 34}vh">
+      <div id="hookNum"></div>
+      <div class="serif big" style="font-size:${V ? 12 : 13}vmin;margin-top:2vmin">${S.problems.map((p, i) => `<span class="mask abs" id="hk${i}" style="left:0;right:0"><span>${p}</span></span>`).join('')}</div>
+    </div>
+    <div class="abs center serif big it" id="familiar" style="top:${V ? 42 : 40}vh;font-size:${V ? 12 : 14}vmin">${S.familiar}</div>
+    <div class="abs serif" id="from" style="left:${L.pad}vw;right:${L.pad}vw;${V ? 'top:14vh' : 'bottom:14vh'};font-size:${V ? 8.5 : 8}vmin;line-height:1;font-weight:340">
+      <span class="mask"><span id="from1">${S.from1}</span></span><span class="mask"><span id="from2" class="it">${S.from2}</span></span></div>
+    <div class="abs serif big" id="head" style="left:${L.pad}vw;right:${L.pad}vw;${V ? 'top:14vh' : 'bottom:16vh'};font-size:${V ? 10.5 : 12}vmin">
+      <span class="mask"><span id="h1">${S.line1}</span></span><span class="mask"><span id="h2" class="it" style="padding-left:${V ? 0 : 7}vmin">${S.line2}</span></span>
+      <div id="tags" style="font-family:'Inter Tight';font-size:2.3vmin;letter-spacing:.04em;color:rgba(247,244,238,.75);margin-top:4vmin;font-style:normal">${S.tags.join('   ·   ')}</div></div>
+    <div class="abs" id="svcWrap" style="left:${L.pad}vw;right:${L.pad}vw;top:${V ? 17 : 18}vh">
+      <div class="kicker" id="svcK">${S.svcKicker}</div>
+      <div class="serif" id="svcTitle" style="font-size:${V ? 6.2 : 6.4}vmin;line-height:1.02;margin:3vmin 0 0;max-width:${V ? 100 : 62}%">${S.svcTitle}</div>
+      ${svcHTML}</div>
+    <div class="abs" id="procWrap" style="left:${L.pad}vw;right:${L.pad}vw;top:${V ? 17 : 18}vh">
+      <div class="kicker" id="prK">${S.prKicker}</div>
+      <div class="serif" id="prTitle" style="font-size:${V ? 6.2 : 6.4}vmin;line-height:1.02;margin-top:3vmin;max-width:${V ? 100 : 62}%">${S.prTitle}</div></div>
+    <svg class="abs" id="procLine" style="left:0;top:0;width:100vw;height:100vh;overflow:visible"><line id="plBase" stroke="rgba(247,244,238,.25)" stroke-width="2"/><line id="plProg" stroke="#F26A36" stroke-width="5" stroke-linecap="round" style="filter:drop-shadow(0 0 8px rgba(242,106,54,.8))"/></svg>
+    <div id="nodes">${nodes}<div id="orb" class="abs" style="width:9vmin;height:9vmin;margin:-4.5vmin 0 0 -4.5vmin;border-radius:50%;background:radial-gradient(circle, #fff 0 6%, #F26A36 12%, rgba(242,106,54,.35) 35%, transparent 70%)"></div></div>
+    <div class="abs center" id="cta" style="top:${V ? 30 : 24}vh">
+      <div id="ctaLogo" style="width:${V ? 14 : 10}vmin;margin:0 auto 4vmin">${logo}</div>
+      <div class="serif big" id="ctaHead" style="font-size:${V ? 10 : 9.5}vmin;padding:0 6vw">${S.ctaHead}</div>
+      <div style="margin-top:5vmin"><span class="pill" id="ctaPill">${S.cta}<span>→</span></span></div>
+      <div id="ctaName" style="margin-top:6vmin;font-weight:600;font-size:3vmin;letter-spacing:-.01em">Caribbean Public Solutions</div>
+      <div id="ctaSub" class="serif" style="font-style:italic;color:var(--apricot);font-size:3.2vmin;margin-top:1.2vmin">${S.from1} ${S.from2}</div>
+      ${S.url ? `<div id="ctaUrl" style="margin-top:3vmin;font-size:2.6vmin;color:rgba(247,244,238,.8)">${S.url}</div>` : ''}
+    </div>`;
+  // service layout
+  S.services.forEach((_, i) => {
+    const el = $('#svc' + i);
+    if (V) { el.style.left = '0'; el.style.right = '0'; el.style.top = `${30 + i * 12.5}vh`; }
+    else { el.style.width = '19.5vw'; el.style.left = `${i * 21.6}vw`; el.style.top = '32vh'; }
+  });
+  await document.fonts.ready;
+  els = Object.fromEntries([...document.querySelectorAll('[id]')].map((e) => [e.id, e]));
+};
+
+function camera(c) {
+  const base = Math.max(W / ((32) * U), H / (22 * U));
+  const k = base * c.zoom;
+  els.plane.style.transform = `rotateX(${c.tilt}deg)`;
+  els.layers.style.transform = `scale(${k}) translate(${-c.x * U}px, ${-c.z * U}px)`;
+  const r = els.bpin.getBoundingClientRect();
+  els.blabel.style.left = r.left + 'px';
+  els.blabel.style.top = (r.top - H * .045) + 'px';
+}
+const mixCam = (a, b, t) => ({ x: lerp(a.x, b.x, t), z: lerp(a.z, b.z, t), zoom: lerp(a.zoom, b.zoom, t), tilt: lerp(a.tilt, b.tilt, t) });
+
+const set = (el, o = 1, y = 0, extra = '') => { el.style.opacity = o; el.style.transform = `translateY(${y}px) ${extra}`; };
+const maskIn = (el, t, a, dur = .7, out = Infinity, od = .35) => {
+  const i = eOut(prog(t, a, dur)), o = eInOut(prog(t, out, od));
+  el.style.transform = `translateY(${(1 - i) * 110 - o * 110}%)`;
+};
+
+window.renderFrame = (t) => {
+  // ---------- camera timeline ----------
+  const cams = {
+    far: { x: V ? 2 : 0.4, z: 0.6, zoom: .95, tilt: 0 },
+    bonaire: { x: BX - (V ? 0 : 1.2), z: BZ - (V ? 1.2 : .9), zoom: V ? 2.7 : 2.9, tilt: 52 },
+    region: { x: BX - (V ? 1.5 : 3.2), z: BZ - 2.4, zoom: V ? 1.7 : 1.55, tilt: 44 },
+    dim: { x: BX - 1, z: BZ - 3, zoom: 1.9, tilt: 58 },
+    end: { x: V ? BX - 1 : BX - 1.2, z: BZ - 5.6, zoom: V ? 1.6 : 1.2, tilt: 40 },
+  };
+  let c;
+  if (t < 5) c = cams.far;
+  else if (t < 9.3) c = mixCam(cams.far, cams.bonaire, eInOut(prog(t, 5, 4.1)));
+  else if (t < 14.5) c = mixCam(cams.bonaire, cams.region, eInOut(prog(t, 9.3, 2.6)));
+  else if (t < 26) c = mixCam(cams.region, cams.dim, eInOut(prog(t, 14.5, 2)));
+  else c = mixCam(cams.dim, cams.end, eInOut(prog(t, 26, 2.2)));
+  // slow drift for life
+  c = { ...c, x: c.x + Math.sin(t * .25) * .15, z: c.z + Math.cos(t * .2) * .1 };
+  camera(c);
+
+  const worldOn = eInOut(prog(t, 3.9, 1.6));
+  const dim = 0.72 * eInOut(prog(t, 14.4, .9)) * (1 - eInOut(prog(t, 25.6, 1)));
+  els.world.style.opacity = worldOn;
+  els.scrim.style.opacity = dim;
+  els.sea.style.setProperty('--gx', `${50 + Math.sin(t * .3) * 6}%`);
+
+  // Bonaire glow + rings
+  const gl = clamp(prog(t, 5.2, 1.5));
+  els.glowIn.style.opacity = gl * (.85 + Math.sin(t * 3) * .15);
+  [els.ring1, els.ring2].forEach((r, i) => { const ph = ((t * .55) + i * .5) % 1; r.style.opacity = gl * (1 - ph) * .9; r.style.transform = `scale(${1 + ph * 2.6})`; });
+  els.blabel.style.opacity = win(t, 6.2, 14.3, .6, .5);
+
+  // arcs: draw in scene 4, full network at the end
+  arcs.forEach((a, i) => {
+    const d1 = eOut(prog(t, 9.7 + i * .09, 1.3));
+    const p = d1;
+    const path = els['arc' + i];
+    path.style.strokeDashoffset = 1 - p;
+    path.style.opacity = t < 26 ? .95 : .75;
+    els['dot' + i].setAttribute('opacity', clamp((p - .9) * 10));
+  });
+
+  // ---------- brand ----------
+  set(els.brand, win(t, .2, 25.9, .6, .5), 0);
+
+  // ---------- S1 hook: problems ----------
+  const hookSlots = [[0.15, 1.2], [1.2, 2.2], [2.2, 3.15]];
+  hookSlots.forEach(([a, b], i) => maskIn(els['hk' + i].firstElementChild, t, a, .45, b - .25, .3));
+  const hi = t < 1.2 ? 0 : t < 2.2 ? 1 : 2;
+  els.hookNum.textContent = `0${hi + 1} / 03`;
+  els.hookNum.style.opacity = win(t, .1, 3.15, .3, .25);
+
+  els.hook.style.opacity = t < 3.3 ? 1 : 0;
+  els.from.style.opacity = t > 5.5 && t < 9.9 ? 1 : 0;
+  els.head.style.opacity = t > 9.5 && t < 14.9 ? 1 : 0;
+  els.endScrim.style.opacity = eInOut(prog(t, 26, 1.2));
+  // ---------- S2 familiar ----------
+  const f = win(t, 3.15, 5.1, .45, .45);
+  set(els.familiar, f, (1 - eOut(prog(t, 3.15, .6))) * 30, `scale(${1 + prog(t, 3.1, 2) * .04})`);
+
+  // ---------- S3 from Bonaire ----------
+  maskIn(els.from1, t, 6.0, .8, 9.2, .4);
+  maskIn(els.from2, t, 6.35, .8, 9.3, .4);
+
+  // ---------- S4 headline ----------
+  maskIn(els.h1, t, 9.9, .85, 14.2, .4);
+  maskIn(els.h2, t, 10.35, .85, 14.3, .4);
+  set(els.tags, win(t, 11.3, 14.4, .6, .35));
+
+  // ---------- S5 services ----------
+  set(els.svcK, win(t, 14.7, 21.4, .5, .4));
+  set(els.svcTitle, win(t, 14.85, 21.4, .6, .4), (1 - eOut(prog(t, 14.85, .7))) * 24);
+  for (let i = 0; i < 4; i++) {
+    const a = 15.8 + i * .55;
+    set(els['svc' + i], win(t, a, 21.45, .6, .4), (1 - eOut(prog(t, a, .7))) * 40);
+    els['svc' + i].style.borderTopColor = t > a + .3 && t < 21.4 ? 'rgba(242,106,54,.85)' : 'rgba(247,244,238,.25)';
+  }
+
+  // ---------- S6 process ----------
+  const pOn = win(t, 21.6, 26, .5, .4);
+  set(els.prK, pOn);
+  set(els.prTitle, pOn, (1 - eOut(prog(t, 21.7, .7))) * 24);
+  const y = V ? H * .52 : H * .63, x0 = V ? W * .5 : W * .12, x1 = V ? W * .5 : W * .88;
+  const y0 = V ? H * .36 : y, y1 = V ? H * .84 : y;
+  const lineIn = eOut(prog(t, 22.0, .8));
+  [els.plBase, els.plProg].forEach((l) => { l.setAttribute('x1', x0); l.setAttribute('y1', y0); });
+  els.plBase.setAttribute('x2', lerp(x0, x1, lineIn)); els.plBase.setAttribute('y2', lerp(y0, y1, lineIn));
+  const pr = eInOut(prog(t, 22.6, 2.9));
+  els.plProg.setAttribute('x2', lerp(x0, x1, pr)); els.plProg.setAttribute('y2', lerp(y0, y1, pr));
+  els.procLine.style.opacity = pOn;
+  els.orb.style.left = lerp(x0, x1, pr) + 'px'; els.orb.style.top = lerp(y0, y1, pr) + 'px';
+  els.orb.style.opacity = pOn * clamp(prog(t, 22.5, .3));
+  for (let i = 0; i < 4; i++) {
+    const u = i / 3, nx = lerp(x0, x1, u), ny = lerp(y0, y1, u);
+    const n = els['node' + i], lab = els['nl' + i];
+    n.style.left = nx + 'px'; n.style.top = ny + 'px';
+    const lit = pr >= u - .001;
+    n.style.background = lit ? '#F26A36' : '#071e28';
+    n.style.borderColor = lit ? '#F26A36' : 'rgba(255,182,142,.6)';
+    n.style.boxShadow = lit ? '0 0 3vmin rgba(242,106,54,.7)' : 'none';
+    n.style.opacity = pOn * clamp(prog(t, 22.0 + u * .6, .3));
+    if (V) { lab.style.left = nx + W * .06 + 'px'; lab.style.top = ny - H * .025 + 'px'; lab.style.transform = 'none'; lab.style.textAlign = 'left'; }
+    else { lab.style.left = nx + 'px'; lab.style.top = ny + H * .045 + 'px'; }
+    lab.style.opacity = pOn * (lit ? 1 : .35);
+  }
+
+  // ---------- S7 CTA ----------
+  const ca = (a, d = .7) => win(t, a, 99, d);
+  set(els.ctaLogo, ca(26.3), (1 - eOut(prog(t, 26.3, .8))) * 20);
+  set(els.ctaHead, ca(26.5), (1 - eOut(prog(t, 26.5, .8))) * 30);
+  set(els.ctaPill, ca(27.0), 0, `scale(${.92 + .08 * eOut(prog(t, 27, .6))})`);
+  els.ctaPill.style.display = 'inline-flex';
+  set(els.ctaName, ca(27.4));
+  set(els.ctaSub, ca(27.6));
+  if (els.ctaUrl) set(els.ctaUrl, ca(27.8));
+  els.cta.style.opacity = t > 26 ? 1 : 0;
+};
+</script>
+</body>
+</html>
