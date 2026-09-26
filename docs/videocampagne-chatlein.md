@@ -213,7 +213,7 @@ Variant voor de lange versie: *"Van levering tot laatste detail. Tot alles klopt
 >
 > Een keuken moet niet alleen mooi zijn op de dag dat hij klaar is. Alles moet gewoon kloppen.
 >
-> Nieuwe keuken gepland? Laten we het bespreken.
+> Nieuwe keuken gepland? Stuur me een appje.
 
 ---
 
@@ -355,11 +355,12 @@ Alles in 4K 10-bit, log-profiel, 25p voor normale snelheid. Kader zó dat zowel 
 
 ## 20. CTA
 
-**Hoofd-CTA (gesproken):** "Nieuwe keuken gepland? Laten we het bespreken."
+**Hoofd-CTA (gesproken):** "Nieuwe keuken gepland? Stuur me een appje."
 **Hoofd-CTA (op eindkaart):**
 > Nieuwe keuken gepland?
 > Bespreek je keukenmontage met **Chatlein**.
-> **06 49 11 03 60** · @chatleingroup
+> [WhatsApp-icoon] **06 49 11 03 60**
+> @chatleingroup *(kleiner, secundair)*
 
 **Contactgegevens: wat er gevonden is (26-09-2026)**
 
@@ -368,13 +369,17 @@ Alles in 4K 10-bit, log-profiel, 25p voor normale snelheid. Kader zó dat zowel 
 | Instagram | **@chatleingroup**, profielnaam "Chatlein Montage & Installatie Bedrijf" | **Ja** |
 | Werkspot | werkspot.nl/profiel/chatlein-montage-installatie | Ja, als secundaire route ("Bekijk de reviews op Werkspot") |
 | Vestiging | Vossenzoom, Pijnacker | **Nee.** Een woonstraat. Een huisadres hoort niet in een social-video |
-| Telefoonnummer | **+31 6 49 11 03 60**, aangeleverd door de opdrachtgever (26-09-2026). In beeld als **06 49 11 03 60** (herkenbaarder voor Nederlandse kijkers); in links als `tel:+31649110360` en `https://wa.me/31649110360` | **Ja** |
+| Telefoonnummer | **+31 6 49 11 03 60**, aangeleverd door de opdrachtgever (26-09-2026). **WhatsApp bevestigd** op dit nummer. In beeld als **06 49 11 03 60** (herkenbaarder voor Nederlandse kijkers); in links als `tel:+31649110360` en `https://wa.me/31649110360` | **Ja** |
 | Ander nummer | Het 06-nummer van "Klussenbedrijf Chatlein" (Houtmankade, Amsterdam) hoort bij een ander bedrijf | **Nee** |
 | KvK-nummer | kvk.nl, OpenKvK en Drimble waren vanuit de onderzoeksomgeving niet bereikbaar | Niet nodig in de video. Wel handig als controle van naam en nummer |
 
 **Waarom geen nummer "uit Google" invullen?** Een verkeerd nummer in een betaalde advertentie stuurt leads naar iemand anders en is achteraf niet te herstellen in al gedeelde video's. Invullen kost Gerbian één minuut; raden kost klanten.
 
-Advies: gebruik **één** contactroute in de eindkaart. Liefst de route die Gerbian het snelst beantwoordt (bijv. WhatsApp of Instagram-DM).
+**Primaire contactroute: WhatsApp** (bevestigd, 26-09-2026).
+- **Eindkaart:** WhatsApp-icoon + 06 49 11 03 60, groot. Instagram klein eronder.
+- **Betaalde advertenties (Meta):** doel "Berichten" met de knop **"WhatsApp-bericht sturen"**. Het WhatsApp Business-account op dit nummer moet dan aan de Facebook-pagina/Instagram gekoppeld zijn.
+- **TikTok / YouTube:** link in bio of beschrijving naar `https://wa.me/31649110360?text=Hoi%20Gerbian%2C%20ik%20heb%20een%20nieuwe%20keuken%20gepland`. Het bericht staat dan al klaar voor de klant.
+- **Advies:** gebruik **WhatsApp Business** (gratis) met een automatisch welkomstbericht, bijv. *"Hoi! Leuk dat je appt. Stuur gerust een foto van de ruimte en je keukentekening, dan kijk ik mee. Gerbian"*. Dat vangt reacties op als hij op locatie aan het werk is.
 
 ---
 
@@ -383,7 +388,7 @@ Advies: gebruik **één** contactroute in de eindkaart. Liefst de route die Gerb
 Zie storyboard (sectie 11) en voice-over (sectie 12). Doellengte **55 sec**. Platforms: Instagram Reels, Facebook Reels, TikTok, YouTube Shorts.
 
 **Caption (Instagram, voorstel):**
-> Een keuken kopen is één ding. Zorgen dat alles klopt, is een vak apart. Van levering tot laatste detail. Nieuwe keuken gepland? Stuur een bericht.
+> Een keuken kopen is één ding. Zorgen dat alles klopt, is een vak apart. Van levering tot laatste detail. Nieuwe keuken gepland? App Gerbian: 06 49 11 03 60 📲
 > #keukenmontage #keukenmonteur #denhaag #westland #nieuwekeuken
 
 ---
@@ -460,7 +465,7 @@ Doellengte **85 sec**. Zelfde opbouw als de hero, met drie extra lagen:
 | Is afwerking zichtbaar? | Ja: scène 8, advertentie C |
 | Genoeg emotionele transformatie? | Ja: dozen → koffie in afgewerkte keuken |
 | Begrijpt de kijker wat Chatlein doet? | Ja: stapnummers en slottekst |
-| Is de CTA duidelijk en niet opdringerig? | Ja: "Laten we het bespreken" |
+| Is de CTA duidelijk en niet opdringerig? | Ja: "Stuur me een appje", met één route (WhatsApp) |
 | Professioneel genoeg voor PR? | Ja, mits 4K-productie en geen stock/AI-beelden |
 | Werkt het zonder geluid? | Ja: ondertitels + stapnummers + reviewkaart |
 | Geloofwaardig voor iemand die een keuken laat plaatsen? | Ja, omdat er geen perfectie of garantie wordt geclaimd |
@@ -473,7 +478,8 @@ Doellengte **85 sec**. Zelfde opbouw als de hero, met drie extra lagen:
 |---|---|---|
 | 1 | Logo aanleveren als SVG of PNG met transparante achtergrond; daarmee ligt ook de naam in beeld vast | Gerbian |
 | 2 | ~~Scope bevestigen~~: keukenmontage bevestigd (26-09) | ✓ |
-| 3 | ~~Telefoonnummer~~: 06 49 11 03 60 aangeleverd (26-09). Nog checken: werkt WhatsApp op dit nummer? Anders "WhatsApp" weglaten uit de on-screen tekst | Gerbian |
+| 3 | ~~Telefoonnummer + WhatsApp~~: 06 49 11 03 60, WhatsApp bevestigd (26-09) | ✓ |
+| 3b | Advies: WhatsApp Business met welkomstbericht, koppelen aan Instagram/Facebook voor advertenties | Gerbian |
 | 4 | Reviewquotes letterlijk kopiëren en screenshotten; reviewaantal van die dag noteren | Productie |
 | 5 | Instagram-archief doorzoeken op voor/na- en projectbeelden | Videograaf |
 | 6 | Een lopend project vinden waar de klant wil meewerken; toestemmingsformulier (beeld, naam, woning) | Gerbian + productie |
