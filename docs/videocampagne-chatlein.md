@@ -20,7 +20,7 @@ Dit document volgt de regel **"geen aannames"**. Daarom staat bij elk feit aange
 
 1. **Reviewteksten in dit document zijn parafrases, geen letterlijke citaten.** Vóór publicatie moet elke quote woord voor woord worden overgenomen van de Werkspot-reviewpagina. Neem daarbij de datum en de voornaam of initialen van de reviewer op en vraag toestemming als er een naam in beeld komt.
 2. **Het aantal reviews verschilt per indexmoment** (40, 54 en in één resultaat 540). Het gemiddelde van **4,8 / 5** komt steeds terug. In de video noemen we alleen het cijfer dat op de dag van de montage live op Werkspot staat, met een screenshot als bewijs.
-3. Er is **geen Google-bedrijfsprofiel, Facebookpagina, TikTok-account of eigen website** gevonden. Als die wel bestaan, voeg ze toe aan de bronnenlijst en werk sectie 3 en 4 bij.
+3. Er is **geen Facebookpagina, TikTok-account of eigen website** gevonden. Een **Google-bedrijfsprofiel** is door de opdrachtgever aangeleverd (bron 7), maar kon vanuit de onderzoeksomgeving niet worden geopend. Score, aantal en inhoud van de Google-reviews zijn daarom nog niet verwerkt.
 
 ---
 
@@ -54,6 +54,7 @@ Dit document volgt de regel **"geen aannames"**. Daarom staat bij elk feit aange
 | 4 | Werkspot "Top 10 keukenmonteurs Rotterdam-Albrandswaard": https://www.werkspot.nl/keuken/keukenmonteur-vakmannen/rotterdam-albrandswaard?page=1 | Vermelding in de regio | Via zoekindex |
 | 5 | LinkedIn: https://www.linkedin.com/in/gerbian-chatlein-725549164/ | Rol van Gerbian bij het bedrijf | Via zoekindex |
 | 6 | Instagram @dekeukenarts en @chatleingroup (genoemd in Werkspot-profieltekst) | Mogelijke bron van projectbeelden | Niet ingezien: **eerste actie voor de videograaf** |
+| 7 | Google-bedrijfsprofiel: https://maps.app.goo.gl/CHmJdctKerdFNNaN9 (aangeleverd door opdrachtgever, 26-09-2026) | Google-score, reviews, openingstijden, projectfoto's | Niet ingezien (netwerkblokkade). **Screenshots maken op draaidag -1** |
 
 Actie voor het productieteam: maak op draaidag -1 schermopnames van bron 1, 2 en 6. Die dienen als bewijs en als grafisch materiaal.
 
@@ -63,10 +64,13 @@ Actie voor het productieteam: maak op draaidag -1 schermopnames van bron 1, 2 en
 
 **Wat er is:** twee Instagram-accounts (@chatleingroup voor het bedrijf, @dekeukenarts voor het keukenlabel) en een LinkedIn-profiel van Gerbian. Werkspot is aantoonbaar het belangrijkste kanaal voor klantwerving en reviews.
 
-**Wat ontbreekt (voor zover gevonden):** eigen website, Google-bedrijfsprofiel, Facebook en TikTok.
+**Wat er ook is:** een Google-bedrijfsprofiel (bron 7).
+
+**Wat ontbreekt (voor zover gevonden):** eigen website, Facebook en TikTok.
 
 **Conclusies voor de campagne:**
-1. **De video moet ergens naartoe leiden.** Zonder website of Google-profiel is de CTA nu "Stuur een DM op Instagram" of "Vind ons op Werkspot". Advies: maak vóór de lancering een **Google-bedrijfsprofiel** aan. Dat is gratis, werkt voor lokale vindbaarheid en er komen reviews bij. Maak daarnaast een eenvoudige landingspagina (deze repository `my-website` leent zich daarvoor).
+1. **De video moet ergens naartoe leiden.** Er is geen eigen website, maar wel een telefoonnummer, Instagram en een Google-profiel. Advies: zet in advertenties de knop **"Bellen"** of **"WhatsApp"**. Link in organische posts naar het Google-profiel, want daar staan reviews én contactgegevens bij elkaar. Een eenvoudige landingspagina blijft een goede volgende stap (deze repository `my-website` leent zich daarvoor).
+   **Google-reviews als bewijs:** als het Google-profiel ook reviews heeft, is een kaart met ★ Google + ★ Werkspot sterker dan alleen Werkspot. Voeg ze pas toe na letterlijke controle.
 2. **Twee merknamen verwarren.** Kies voor deze campagne één afzender. Advies: **Chatlein** als afzender, met Gerbian als gezicht. "De Keuken Arts" kan hooguit als ondertitel of later als label.
 3. **De eerste taak voor de videograaf** is het bestaande Instagram-archief doorzoeken op echte voor-en-na-beelden en projectfoto's. Wat daar staat, wordt het belangrijkste bewijsmateriaal (sectie 6 van de briefing).
 
@@ -80,7 +84,7 @@ Actie voor het productieteam: maak op draaidag -1 schermopnames van bron 1, 2 en
 
 | Thema | Wat klanten beschrijven | Bruikbaar als |
 |---|---|---|
-| **Netheid** | "Heel netjes gewerkt" bij het aansluiten van een vaatwasser en het monteren van een werkblad | Kernbewijs voor afwerking |
+| **Netheid** | "Heel netjes gewerkt" bij het aansluiten van een vaatwasser en het monteren van een werkblad. Vermoedelijk letterlijke tekst (Werkspot, 29-10-2023): *"Heel netjes gewerkt, vaatwasser moest worden aangesloten. Verder was er de communicatie ook erg goed"*. Nog op de bronpagina controleren | Kernbewijs voor afwerking; **beste kandidaat voor de reviewkaart** |
 | **Communicatie** | "Zeer goede communicatie", "duidelijke communicatie, goede afspraken" | Kernbewijs voor ontzorging |
 | **Probleemoplossend** | Een leveringsprobleem werd snel opgelost | **Sterkste bewijs** voor de positionering ("hij lost het op") |
 | **Persoon** | Prettig, respectvol, behulpzaam, betrouwbaar | Menselijke kant van Gerbian |
@@ -473,7 +477,8 @@ Doellengte **85 sec**. Zelfde opbouw als de hero, met drie extra lagen:
 | 4 | Reviewquotes letterlijk kopiëren en screenshotten; reviewaantal van die dag noteren | Productie |
 | 5 | Instagram-archief doorzoeken op voor/na- en projectbeelden | Videograaf |
 | 6 | Een lopend project vinden waar de klant wil meewerken; toestemmingsformulier (beeld, naam, woning) | Gerbian + productie |
-| 7 | Advies: Google-bedrijfsprofiel en eenvoudige landingspagina vóór lancering | Gerbian |
+| 7 | Google-profiel bestaat ✓. Controleren: klopt het telefoonnummer erop, staan er projectfoto's, en wat zijn de score en het aantal reviews? Screenshot maken | Productie |
+| 7b | Advies: eenvoudige landingspagina na lancering | Gerbian |
 | 8 | Advies: reageren op de negatieve Werkspot-review | Gerbian |
 | 9 | Mondelinge toestemming voor beeld en stemkloon ontvangen (26-09). **Vastleggen op papier** met het formulier in sectie 26 | Productie + Gerbian |
 | 10 | 10 minuten schone stemopname van Gerbian voor de kloon (sectie 26) | Productie |
