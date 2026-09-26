@@ -1,2 +1,4 @@
 node_modules/
 .natural-earth/
+# Videos are added explicitly (git add -f) once a render has finished.
+marketing/video/out/*.mp4
