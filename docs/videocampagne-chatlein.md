@@ -29,7 +29,7 @@ Dit document volgt de regel **"geen aannames"**. Daarom staat bij elk feit aange
 | Onderwerp | Bevinding | Status |
 |---|---|---|
 | Handelsnaam op platforms | "Chatlein Montage & Installatie", ook "Chatleingroup Montage & Installatie" / "Chatlein Group" | [BEVESTIGD] |
-| Naam in de briefing | "Chatlein Montage **Keuken** & Installatie". Deze variant is online niet gevonden | [DOOR GERBIAN BEVESTIGEN]: welke naam komt in logo en CTA? |
+| Naam in beeld | Volgens het aangeleverde logo: **CHATLEIN GROUP**, *Montage & Installatie bedrijf* | [BEVESTIGD] (logo, 26-09-2026) |
 | Eigenaar | Gerbian Chatlein (LinkedIn: "Gerbian Chatlein – Chatlein Montage & Installatie") | [BEVESTIGD] |
 | Sublabel | **De Keuken Arts**: onderdeel van Chatlein Group, profileert zich met "renoveren, repareren en installeren van alles rondom je keuken" | [BEVESTIGD] (formulering [CONTROLEREN]) |
 | Vestiging | Werkspot-profiel onder **Pijnacker**; andere bronnen noemen **Den Haag** | [CONTROLEREN] |
@@ -270,7 +270,7 @@ Richtlijn: Gerbian spreekt in eigen woorden. De tekst hieronder is een **richtin
 - Instagram: @chatleingroup *(geverifieerd)*
 - Tel./WhatsApp: 06 49 11 03 60
 
-Typografie: één schreefloze letter (bijv. Inter of Söhne), wit met 60 % zwarte schaduw, hoofdletters alleen voor de stapnummers.
+Typografie en kleuren: zie sectie 27 (titels in een schreeflettertype passend bij het logo, ondertitels in Inter, accenten in Chatlein Geel `#FFDE54` op Chatlein Blauw `#023881`).
 
 ---
 
@@ -476,7 +476,7 @@ Doellengte **85 sec**. Zelfde opbouw als de hero, met drie extra lagen:
 
 | # | Actie | Wie |
 |---|---|---|
-| 1 | Logo aanleveren als SVG of PNG met transparante achtergrond; daarmee ligt ook de naam in beeld vast | Gerbian |
+| 1 | ~~Logo~~ aangeleverd (PNG 800 px) ✓. Nog nodig: **SVG of PNG ≥ 2000 px** voor de 4K-master, en een **witte variant** voor donkere achtergronden | Gerbian / logomaker |
 | 2 | ~~Scope bevestigen~~: keukenmontage bevestigd (26-09) | ✓ |
 | 3 | ~~Telefoonnummer + WhatsApp~~: 06 49 11 03 60, WhatsApp bevestigd (26-09) | ✓ |
 | 3b | Advies: WhatsApp Business met welkomstbericht, koppelen aan Instagram/Facebook voor advertenties | Gerbian |
@@ -488,7 +488,7 @@ Doellengte **85 sec**. Zelfde opbouw als de hero, met drie extra lagen:
 | 8 | Advies: reageren op de negatieve Werkspot-review | Gerbian |
 | 9 | Mondelinge toestemming voor beeld en stemkloon ontvangen (26-09). **Vastleggen op papier** met het formulier in sectie 26 | Productie + Gerbian |
 | 10 | 10 minuten schone stemopname van Gerbian voor de kloon (sectie 26) | Productie |
-| 11 | Merkkleuren uit het logo halen en invullen in sectie 27 | Motion designer |
+| 11 | ~~Merkkleuren~~ vastgelegd in sectie 27 ✓ | ✓ |
 
 ---
 
@@ -530,19 +530,42 @@ Wat we wel meenemen: de **eigenschappen** die zo'n presentatorstem prettig maken
 
 ## 27. Huisstijl: logo en kleuren
 
-**Status:** het logo en de kleuren staan op Instagram (@chatleingroup / @dekeukenarts), maar die pagina's waren vanuit de onderzoeksomgeving niet te openen. Er is dus **nog geen logobestand of kleurcode vastgesteld**. We verzinnen geen kleuren.
+**Status:** logo aangeleverd door de opdrachtgever (26-09-2026). Opgeslagen als [`docs/assets/logo-chatlein-group.png`](assets/logo-chatlein-group.png) (PNG, 800 × 400 px, transparante achtergrond).
 
-**Aanleveren:** logo als SVG (of PNG ≥ 2000 px, transparante achtergrond). De motion designer haalt de kleurcodes uit het logo en vult deze tabel in:
+![Logo Chatlein Group](assets/logo-chatlein-group.png)
 
-| Token | Gebruik in de video | Hex |
+**Merknaam in beeld:** **CHATLEIN GROUP**, met als ondertitel *Montage & Installatie bedrijf*. In gesproken tekst en captions: "Chatlein".
+
+### Kleuren (uit het logobestand gemeten)
+
+| Token | Hex | In het logo | Gebruik in de video |
+|---|---|---|---|
+| **Chatlein Blauw** | `#023881` | Bovenste balken links en rechts | Primair: eindkaart-achtergrond, stapnummers, naamtitel |
+| **Chatlein Geel** | `#FFDE54` | Middelste balk boven | Accent: sterren in de reviewkaart, onderstreping kernwoorden, WhatsApp-nummer op blauw |
+| **Chatlein Rood** | `#AB1416` | Balk onder de naam | Spaarzaam: alleen de dunne lijn onder titels (zoals in het logo) |
+| **Zwart** | `#000000` | Woordmerk en ondertitel | Logo op lichte achtergrond, tekstschaduw |
+| **Wit** | `#FFFFFF` | – | Ondertitels, logo-variant op donker/blauw |
+
+**Contrast (WCAG), gecontroleerd:**
+
+| Combinatie | Ratio | Oordeel |
 |---|---|---|
-| Primair | Stapnummers (1 · Voorbereiden …), eindkaart-achtergrond | [uit logo] |
-| Accent | Sterren in de reviewkaart, onderstreping kernwoord in ondertitels | [uit logo] |
-| Neutraal donker | Tekstschaduw, reviewkaart-achtergrond (80 % dekking) | [uit logo, of #111111] |
-| Neutraal licht | Ondertiteltekst | #FFFFFF |
+| Wit op Blauw | 11,1 : 1 | Uitstekend: standaard voor titels en eindkaart |
+| Geel op Blauw | 8,4 : 1 | Uitstekend: nummer en sterren op eindkaart |
+| Zwart op Geel | 15,8 : 1 | Uitstekend |
+| Wit op Rood | 7,4 : 1 | Goed, maar rood alleen als lijn gebruiken, niet als vlak |
 
-**Regels voor het logo in beeld:**
-- **Eindkaart:** logo gecentreerd, maximaal 40 % van de beeldbreedte, met minimaal de hoogte van de "C" aan vrije ruimte rondom.
-- **Tijdens de video:** geen permanent logo in de hoek (dat voelt als reclame en valt weg onder de UI). Wel een klein logo op de reviewkaart en de naamtitel.
-- **Op locatie:** laat echte merkdragers terugkomen als die er zijn, zoals een bedrijfsbus, werkkleding of gereedschapskist met logo. Dat is sterker dan een grafisch logo.
-- **Contrast:** als de primaire kleur licht is, zet het logo op een donker vlak. Controleer de leesbaarheid op een telefoon op halve helderheid.
+### Het logo in beeld
+
+- **Het aangeleverde logo is zwart op transparant.** Op licht beeld (witte keuken, eindkaart met lichte achtergrond) werkt het direct. **Op donker beeld of op Chatlein Blauw is een witte variant nodig:** woordmerk en ondertitel wit, balken in de eigen kleuren. Laat die als SVG maken (zie hieronder).
+- **Resolutie:** 800 px breed volstaat voor 1080 × 1920 als het logo maximaal ± 70 % van de breedte beslaat. Voor de 4K-master is een **SVG of PNG ≥ 2000 px** nodig. Vraag de maker van het logo om het origineel.
+- **Eindkaart:** logo gecentreerd, maximaal 70 % van de beeldbreedte (9:16) of 40 % (16:9), met vrije ruimte rondom ter hoogte van de "C".
+- **Tijdens de video:** geen permanent logo in de hoek. Wel het motief van de drie balken (blauw, geel, blauw) als dunne lijn boven de naamtitel en de reviewkaart. Zo is de huisstijl herkenbaar zonder dat het "reclame" schreeuwt.
+- **Logo-animatie (eindkaart, 1,5 sec):** de bovenste balken schuiven vanaf links in beeld (blauw, geel, blauw, 4 frames na elkaar), het woordmerk fadet in, de rode lijn trekt van links naar rechts, de ondertitel verschijnt als laatste. Geluid: één zachte *tik*, in dezelfde sfeer als de waterpas uit scène 1.
+- **Op locatie:** laat echte merkdragers terugkomen als die er zijn (bus, werkkleding, gereedschapskist met logo).
+
+### Typografie
+
+- **Titels, stapnummers, eindkaart:** een hoog-contrast schreeflettertype dat aansluit bij het woordmerk, bijv. **Bodoni Moda** of **Playfair Display** (beide gratis via Google Fonts), in hoofdletters met iets ruimere spatiëring.
+- **Ondertitels:** een schreefloze letter voor leesbaarheid op mobiel (**Inter**, semibold), wit met zachte zwarte schaduw.
+- **Kernwoord in ondertitels:** onderstreept met een dunne gele lijn (`#FFDE54`) in plaats van een andere kleur tekst.
