@@ -8,3 +8,11 @@ mkdir -p fonts   # zet hier PlayfairDisplay.ttf, PlayfairDisplay-Italic.ttf en I
 python3 render.py ../chatlein-hero-9x16.mp4
 python3 render.py stills 3.5 20 37.5   # losse testframes in ./stills
 ```
+
+## Hyper-motion-advertentie (± 20 s, 128 BPM)
+
+```bash
+python3 hyper.py ../chatlein-hyper-9x16.mp4
+python3 hyper.py stills 0.6 14.9 37   # testframes per beat in ./hstills
+```
+`hyper.py` hergebruikt de tekenfuncties uit `render.py`.
