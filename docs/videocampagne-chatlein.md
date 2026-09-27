@@ -629,3 +629,22 @@ Bron: Google-zoekresultaten, geplakt door de opdrachtgever. Volledige data in [`
 - **Scope:** reviews noemen naast montage ook elektra, installatietechniek, timmerwerk, tegelzetten en stucen ("Alles in een hand"). Eerder is alleen keukenmontage bevestigd. **Laat Gerbian bevestigen** wat hij zelf doet en wat via partners loopt (één review noemt een "aanbevolen loodgieter en elektricien"). Tot dan: alleen tonen als klantquote.
 - **Regio:** de vestiging is Berkel en Rodenrijs. Werkgebied in de captions: Lansingerland, Pijnacker, Den Haag, Rotterdam, Westland.
 - **Foto's:** het Google-profiel heeft foto's ("+3"). Die zijn nodig voor de before and after. Sla ze op en stuur ze in de chat, of gebruik `scripts/haal_google_reviews.py` met een API-sleutel.
+
+---
+
+## 30. Update 27-09-2026: werkwijze, extra dienst en before/after
+
+**Werkwijze (bevestigd door opdrachtgever):** Gerbian monteert zelf en is **eindverantwoordelijk**. Voor leidingwerk, elektra, tegel- en stucwerk werkt hij met **vaste, betrouwbare partners**, waarvan hij de kwaliteit bewaakt. Dit sluit aan op de reviews ("Alles in een hand", "Ook de aanbevolen loodgieter en elektricien hebben hun werk goed en adequaat gedaan").
+
+- **Formulering in video en captions:** "Eén aanspreekpunt. Gerbian monteert en bewaakt het geheel, met vaste partners voor leidingwerk, elektra, tegel- en stucwerk."
+- **Niet zeggen:** "Gerbian doet alles zelf".
+- De scène "Techniek" (sectie 10/22) mag terug, met de VO *"Leidingwerk, elektra, tegels en stucwerk: dat doen vaste partners. Ik zorg dat het klopt."*
+
+**Extra dienst (Facebook):** De Keuken Arts levert een **mobiele noodkeuken** (spoelbak, kraan, elektrische kookplaat), binnen 24 uur, vanaf €25 per dag, inclusief bezorging. Dat is een apart campagne-idee: *"Zonder keuken tijdens de verbouwing?"*
+
+**Contact (Facebook):** chatleingroupbv@gmail.com · Facebookpagina "Chatleingroupbv".
+
+**Before/after (opgeleverd):**
+- [`video/chatlein-voor-na-9x16.mp4`](../video/chatlein-voor-na-9x16.mp4): 18 sec, 9:16. Echte foto's van één project (Facebook-post 9 nov. 2021), voor en na met een wipe-onthulling, plus een extra project, de review van Rob S., 4,7★ en de eindkaart.
+- [`video/chatlein-voor-na-post.jpg`](../video/chatlein-voor-na-post.jpg): 1080 × 1350, feedpost.
+- **Kwaliteit:** de foto's komen uit screenshots (de nafoto's zijn maar ± 300 px). Voor de definitieve versie zijn de **originele foto's** nodig (van Gerbians telefoon of via "Foto downloaden" op Facebook).
