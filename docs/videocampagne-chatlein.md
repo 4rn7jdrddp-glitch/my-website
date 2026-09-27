@@ -607,3 +607,25 @@ Gemaakt met wat er nu beschikbaar is: logo, merkkleuren, bevestigde feiten en ec
 | 0:48–0:53 | Logo, "Nieuwe keuken gepland? Stuur Gerbian een appje", **06 49 11 03 60**, WhatsApp · @chatleingroup |
 
 **Volgende versie:** echte opnames volgens de shotlist (sectie 18) en de stem van Gerbian (sectie 26) op dezelfde tijdlijn. De graphics uit deze versie blijven herbruikbaar. Broncode: `video/src/render.py`.
+
+---
+
+## 29. Update 27-09-2026: Google-profiel
+
+Bron: Google-zoekresultaten, geplakt door de opdrachtgever. Volledige data in [`data/reviews.json`](../data/reviews.json).
+
+| Gegeven | Waarde |
+|---|---|
+| Naam op Google | Chatleingroup Montage & Installatie Bedrijf |
+| Score | **4,7 / 5 uit 38 reviews** (30× 5★, 6× 4★, 1× 3★, 1× 2★) |
+| Adres | Industrieweg 73, 2651 BD Berkel en Rodenrijs (bedrijfsadres) |
+| Telefoon | +31 6 49110360 (zelfde als in de CTA) |
+| Profielen | Instagram, Facebook |
+| Omschrijving | "Heeft u een nieuwe keuken gekocht en bent u opzoek naar een installatie bedrijf die het totale project kan aanpakken en uitvoeren? Dan bent u bij ons op het juiste adres!" |
+
+**Gevolgen voor de campagne:**
+- **Social proof:** gebruik voortaan **"4,7 ★ · 38 Google-reviews"** (en eventueel "4,8 op Werkspot").
+- **Nieuwe hook:** "De montage en plaatsing van onze nieuwe keuken was nog beter dan de nieuwe keuken zelf." (Rob Schouten, 5★)
+- **Scope:** reviews noemen naast montage ook elektra, installatietechniek, timmerwerk, tegelzetten en stucen ("Alles in een hand"). Eerder is alleen keukenmontage bevestigd. **Laat Gerbian bevestigen** wat hij zelf doet en wat via partners loopt (één review noemt een "aanbevolen loodgieter en elektricien"). Tot dan: alleen tonen als klantquote.
+- **Regio:** de vestiging is Berkel en Rodenrijs. Werkgebied in de captions: Lansingerland, Pijnacker, Den Haag, Rotterdam, Westland.
+- **Foto's:** het Google-profiel heeft foto's ("+3"). Die zijn nodig voor de before and after. Sla ze op en stuur ze in de chat, of gebruik `scripts/haal_google_reviews.py` met een API-sleutel.

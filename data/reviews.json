@@ -7,50 +7,20 @@
       "platform": "Werkspot",
       "score": 4.8,
       "schaal": 5,
-      "aantal_reviews": null,
-      "status": "score bevestigd via zoekindex; aantal wisselt per bron (40/54), op publicatiedag controleren",
+      "aantal_reviews": 40,
+      "status": "4,8 bevestigd; Werkspot toont '4,8 (40)' op profiel. '540' in lijstweergaven is vermoedelijk een weergavefout",
       "bron": "https://www.werkspot.nl/profiel/chatlein-montage-installatie/reviews"
     },
     {
       "platform": "Google",
-      "score": null,
+      "score": 4.7,
       "schaal": 5,
-      "aantal_reviews": null,
-      "status": "profiel bestaat; score nog niet uitgelezen (scripts/haal_google_reviews.py)",
+      "aantal_reviews": 38,
+      "status": "bevestigd (Google-zoekresultaat, geplakt door opdrachtgever, 27-09-2026)",
       "bron": "https://maps.app.goo.gl/CHmJdctKerdFNNaN9"
     }
   ],
   "reviews": [
-    {
-      "id": "google-1",
-      "platform": "Google",
-      "sterren": 5,
-      "datum": "± 5 maanden geleden (t.o.v. 2026-09-26)",
-      "tekst": "Zeer vakkundig geholpen, heel professioneel en zeer vriendelijk personeel,  keuken zeer mooi geworden ,echte aanrader",
-      "status": "letterlijk",
-      "bron": "aangeleverd door opdrachtgever (Google-profiel)",
-      "themas": ["vakmanschap", "persoonlijk", "resultaat"]
-    },
-    {
-      "id": "google-2",
-      "platform": "Google",
-      "sterren": 5,
-      "datum": null,
-      "tekst": "Me keuken gekocht bij keukenwarenhuis. Vanaf dag 1 tot de plaatsing had ik contact met chatleingroup. De monteur heeft ons super geholpen en begeleid met advies en raad. Hij nam ons echt de stress weg. Hele goede communicatie en service. Hij komt echt ze afspraken na.",
-      "status": "letterlijk",
-      "bron": "aangeleverd door opdrachtgever (Google-profiel)",
-      "themas": ["ontzorging", "communicatie", "afspraken", "begeleiding"]
-    },
-    {
-      "id": "google-3",
-      "platform": "Google",
-      "sterren": 5,
-      "datum": null,
-      "tekst": "Prachtige keuken geinstalleerd door Gerbian. Is meerdere keren teruggekomen om nalevering te installeren (bestelfout vd keukenzaak). Onwijs goed geholpen, makkelijk om afspraak mee te maken en fijn als mens om in huis te hebben. Let op details en gaat door tot het echt goed is. Resultaat en service top!",
-      "status": "letterlijk",
-      "bron": "aangeleverd door opdrachtgever (Google-profiel)",
-      "themas": ["probleemoplossing", "details", "afspraken", "persoonlijk", "resultaat"]
-    },
     {
       "id": "werkspot-1",
       "platform": "Werkspot",
@@ -59,7 +29,11 @@
       "tekst": "Heel netjes gewerkt, vaatwasser moest worden aangesloten. Verder was er de communicatie ook erg goed",
       "status": "vermoedelijk letterlijk (zoeksnippet) - controleren op bronpagina",
       "bron": "https://www.werkspot.nl/profiel/chatlein-montage-installatie/reviews",
-      "themas": ["netheid", "communicatie"]
+      "themas": [
+        "netheid",
+        "communicatie"
+      ],
+      "extra_snippet": "Heel goed en netjes werk geleverd door Gerbian. Keukenkastjes en inbouwapparatuur (kookplaat, oven en vaatwasser) zijn vakkundig geplaatst."
     },
     {
       "id": "werkspot-parafrases",
@@ -70,7 +44,13 @@
       "samenvatting": "Overige positieve reviews (parafrase uit zoekindex): kasten en inbouwapparatuur professioneel geplaatst; duidelijke communicatie en goede afspraken; leveringsprobleem snel opgelost; aardig, respectvol, behulpzaam, betrouwbaar, oog voor detail.",
       "status": "parafrase - niet als quote gebruiken",
       "bron": "https://www.werkspot.nl/profiel/chatlein-montage-installatie/reviews",
-      "themas": ["vakmanschap", "communicatie", "probleemoplossing", "persoonlijk", "details"]
+      "themas": [
+        "vakmanschap",
+        "communicatie",
+        "probleemoplossing",
+        "persoonlijk",
+        "details"
+      ]
     },
     {
       "id": "werkspot-negatief",
@@ -81,7 +61,422 @@
       "samenvatting": "Eén negatieve review (parafrase): grepen scheef/niet waterpas/niet gecentreerd, opmerkingen slecht ontvangen.",
       "status": "parafrase - niet in video; wel meenemen in toon (geen perfectieclaims)",
       "bron": "https://www.werkspot.nl/profiel/chatlein-montage-installatie/reviews",
-      "themas": ["afwerking", "communicatie"]
+      "themas": [
+        "afwerking",
+        "communicatie"
+      ]
+    },
+    {
+      "id": "google-01",
+      "platform": "Google",
+      "naam": "Cees Meiboom",
+      "sterren": 5,
+      "datum": "± 2 maanden geleden (t.o.v. 2026-09-27)",
+      "tekst": "Gerbian heeft bij mij de keuken geïnstalleerd en dat is prima gedaan. Kenmerkend voor Gerbian: vriendelijk, meedenkend, vakmanschap.",
+      "status": "letterlijk",
+      "bron": "Google-zoekresultaten, geplakt door opdrachtgever"
+    },
+    {
+      "id": "google-02",
+      "platform": "Google",
+      "naam": "Theo Fafiani",
+      "sterren": 5,
+      "datum": "± 5 maanden geleden (t.o.v. 2026-09-27)",
+      "tekst": "Zeer vakkundig geholpen, heel professioneel en zeer vriendelijk personeel, keuken zeer mooi geworden ,echte aanrader",
+      "status": "letterlijk",
+      "bron": "Google-zoekresultaten, geplakt door opdrachtgever"
+    },
+    {
+      "id": "google-03",
+      "platform": "Google",
+      "naam": "barbawilma",
+      "sterren": 5,
+      "datum": "± 1 jaar geleden (t.o.v. 2026-09-27)",
+      "tekst": "Me keuken gekocht bij keukenwarenhuis. Vanaf dag 1 tot de plaatsing had ik contact met chatleingroup. De monteur heeft ons super geholpen en begeleid met advies en raad. Hij nam ons echt de stress weg. Hele goede communicatie en service. Hij komt echt ze afspraken na.",
+      "status": "letterlijk",
+      "bron": "Google-zoekresultaten, geplakt door opdrachtgever"
+    },
+    {
+      "id": "google-04",
+      "platform": "Google",
+      "naam": "Tom",
+      "sterren": 5,
+      "datum": "± 2 jaar geleden (t.o.v. 2026-09-27)",
+      "tekst": "Prachtige keuken geinstalleerd door Gerbian. Is meerdere keren teruggekomen om nalevering te installeren (bestelfout vd keukenzaak). Onwijs goed geholpen, makkelijk om afspraak mee te maken en fijn als mens om in huis te hebben. Let op details en gaat door tot het echt goed is. Resultaat en service top!",
+      "status": "letterlijk",
+      "bron": "Google-zoekresultaten, geplakt door opdrachtgever"
+    },
+    {
+      "id": "google-05",
+      "platform": "Google",
+      "naam": "Els Schaar",
+      "sterren": 2,
+      "datum": "± 5 maanden geleden (t.o.v. 2026-09-27)",
+      "tekst": "Zeer kundige vakmensen, gaan rustig te werk. En nemen de tijd om het werk netjes af te krijgen.",
+      "status": "letterlijk, ingekort op Google ('… Meer')",
+      "bron": "Google-zoekresultaten, geplakt door opdrachtgever"
+    },
+    {
+      "id": "google-06",
+      "platform": "Google",
+      "naam": "Jan Sierts",
+      "sterren": 3,
+      "datum": "± 1 jaar geleden (t.o.v. 2026-09-27)",
+      "tekst": "Gerbian heeft ons prima en vakkundig geholpen. Na installatie door de 1e monteur, niet van de Chatleingroup, bleken er gebreken. Gerbian heeft deze opgelost,",
+      "status": "letterlijk, ingekort op Google ('… Meer')",
+      "bron": "Google-zoekresultaten, geplakt door opdrachtgever"
+    },
+    {
+      "id": "google-07",
+      "platform": "Google",
+      "naam": "Shirley Kuyt",
+      "sterren": 4,
+      "datum": "± 1 jaar geleden (t.o.v. 2026-09-27)",
+      "tekst": "Het was een zeer fijne ervaring met de montage van de keuken. Het begon een beetje lastig toen de keuken ingemeten moest worden. Maar verder heb ik geen slecht",
+      "status": "letterlijk, ingekort op Google ('… Meer')",
+      "bron": "Google-zoekresultaten, geplakt door opdrachtgever"
+    },
+    {
+      "id": "google-08",
+      "platform": "Google",
+      "naam": "Jeroen Ramessar",
+      "sterren": 5,
+      "datum": "± 2 jaar geleden (t.o.v. 2026-09-27)",
+      "tekst": "Chatleingroup heeft uitstekend werk geleverd bij de montage en installatie van onze nieuwe keuken , apparatuur en diverse elektra aansluitingen.Ze hebben ons",
+      "status": "letterlijk, ingekort op Google ('… Meer')",
+      "bron": "Google-zoekresultaten, geplakt door opdrachtgever"
+    },
+    {
+      "id": "google-09",
+      "platform": "Google",
+      "naam": "Rob Schouten",
+      "sterren": 5,
+      "datum": "± 1 jaar geleden (t.o.v. 2026-09-27)",
+      "tekst": "Écht vakmanschap schijnt nog te bestaan! Complete installatietechniek, timmerwerk, tegelzetten, stucen én slim meedenken, dat alles onder één 'dak'. De montage en plaatsing van onze nieuwe keuken was nog beter dan de nieuwe keuken zelf.",
+      "status": "letterlijk",
+      "bron": "Google-zoekresultaten, geplakt door opdrachtgever"
+    },
+    {
+      "id": "google-10",
+      "platform": "Google",
+      "naam": "Marjolein Kret",
+      "sterren": 5,
+      "datum": "± 1 jaar geleden (t.o.v. 2026-09-27)",
+      "tekst": "Ik ben zeer tevreden over hoe de keuken geplaatst is. Ook de electriciteit is goed aangelegd. Zeer vriendelijke mannen die meedenken en netjes werken. Bedankt!",
+      "status": "letterlijk",
+      "bron": "Google-zoekresultaten, geplakt door opdrachtgever"
+    },
+    {
+      "id": "google-11",
+      "platform": "Google",
+      "naam": "Junny Beharry",
+      "sterren": 5,
+      "datum": "± 2 jaar geleden (t.o.v. 2026-09-27)",
+      "tekst": "Uitstekende service!",
+      "status": "letterlijk, ingekort op Google ('… Meer')",
+      "bron": "Google-zoekresultaten, geplakt door opdrachtgever"
+    },
+    {
+      "id": "google-12",
+      "platform": "Google",
+      "naam": "Lola Lemmens",
+      "sterren": 4,
+      "datum": "± 1 jaar geleden (t.o.v. 2026-09-27)",
+      "tekst": "We zochten een elektriciën voor reparatie van onze keuken wandlampen en gaan vrijwel altijd af op (recente) reviews van bedrijven. De Chatleingroep is een",
+      "status": "letterlijk, ingekort op Google ('… Meer')",
+      "bron": "Google-zoekresultaten, geplakt door opdrachtgever"
+    },
+    {
+      "id": "google-13",
+      "platform": "Google",
+      "naam": "Cindy van de Graaf",
+      "sterren": 5,
+      "datum": "± 1 jaar geleden (t.o.v. 2026-09-27)",
+      "tekst": "Prettige communicatie. Heel transparant in de mogelijkheden en onmogelijkheden van de werkzaamheden. Bedrijf heeft mijn keuken geplaatst en alle werkzaamheden die daarvoor nodig waren correct en vlot uitgevoerd.",
+      "status": "letterlijk",
+      "bron": "Google-zoekresultaten, geplakt door opdrachtgever"
+    },
+    {
+      "id": "google-14",
+      "platform": "Google",
+      "naam": "Rogier Vasen",
+      "sterren": 5,
+      "datum": "± 1 jaar geleden (t.o.v. 2026-09-27)",
+      "tekst": "Wij hebben al meerdere keren een beroep gedaan op Gerbian bij klussen in de keuken. Of het nu het vervangen van een oven of vaatwasser is, of het verbouwen van",
+      "status": "letterlijk, ingekort op Google ('… Meer')",
+      "bron": "Google-zoekresultaten, geplakt door opdrachtgever"
+    },
+    {
+      "id": "google-15",
+      "platform": "Google",
+      "naam": "Jaap Kok",
+      "sterren": 5,
+      "datum": "± 1 jaar geleden (t.o.v. 2026-09-27)",
+      "tekst": "Gerbian is een vriendelijke man die keurig werk aflevert! We zijn heel tevreden over de uitgevoerde werkzaamheden 👌",
+      "status": "letterlijk",
+      "bron": "Google-zoekresultaten, geplakt door opdrachtgever"
+    },
+    {
+      "id": "google-16",
+      "platform": "Google",
+      "naam": "Josaily Alberta",
+      "sterren": 5,
+      "datum": "± 2 jaar geleden (t.o.v. 2026-09-27)",
+      "tekst": "Chatleingroup heeft uitstekend werk geleverd bij de montage en installatie van onze vaatwasser. Ze hebben goede service verleend. Wij zijn zeer tevreden en raden iedereen aan om hun raad te plegen!",
+      "status": "letterlijk",
+      "bron": "Google-zoekresultaten, geplakt door opdrachtgever"
+    },
+    {
+      "id": "google-17",
+      "platform": "Google",
+      "naam": "Elsa Charlety",
+      "sterren": 5,
+      "datum": "± 1 jaar geleden (t.o.v. 2026-09-27)",
+      "tekst": "Kitchen was installed fast and well and communication was very good for little things to fix after. We had a small leak due to the material of the pipe and it was fixed (and with a smile on top of everything!)",
+      "status": "letterlijk",
+      "bron": "Google-zoekresultaten, geplakt door opdrachtgever"
+    },
+    {
+      "id": "google-18",
+      "platform": "Google",
+      "naam": "Ruud Dijk",
+      "sterren": 5,
+      "datum": "± 2 jaar geleden (t.o.v. 2026-09-27)",
+      "tekst": "we zijn ontzettend tevreden hoe de keuken gemonteerd is. Ook de aanbevolen loodgieter en elektricien hebben hun werk goed en adequaat gedaan. We kunnen Gerbian zeker aanbevelen.",
+      "status": "letterlijk",
+      "bron": "Google-zoekresultaten, geplakt door opdrachtgever"
+    },
+    {
+      "id": "google-19",
+      "platform": "Google",
+      "naam": "maria huldy",
+      "sterren": 5,
+      "datum": "± 2 jaar geleden (t.o.v. 2026-09-27)",
+      "tekst": "Prima werk geleverd. Alles in een hand. Goede communicatie, duidelijke sfspraken, praktische oplossingen en meedenkend. Van demonteren stucen tot monteren verliep alles vlot en volgens afspraak",
+      "status": "letterlijk",
+      "bron": "Google-zoekresultaten, geplakt door opdrachtgever"
+    },
+    {
+      "id": "google-20",
+      "platform": "Google",
+      "naam": "Santosh Jhinkoe-Rai",
+      "sterren": 5,
+      "datum": "± 2 jaar geleden (t.o.v. 2026-09-27)",
+      "tekst": "Heb een hele goede ervaring aan overgehouden! Hele vriendelijke monteur. Werkt netjes, snel en vakkundig. Nadat de vorige monteur het liet afweten heeft Gerbian ons goed geholpen. Zeker aan te raden.",
+      "status": "letterlijk",
+      "bron": "Google-zoekresultaten, geplakt door opdrachtgever"
+    },
+    {
+      "id": "google-21",
+      "platform": "Google",
+      "naam": "Marco",
+      "sterren": 5,
+      "datum": "± 1 jaar geleden (t.o.v. 2026-09-27)",
+      "tekst": "Gerbian werkt netjes, is een vakman en duidelijke communicatie vooraf aan de afspraak. Blij met het eindresultaat. 👌",
+      "status": "letterlijk",
+      "bron": "Google-zoekresultaten, geplakt door opdrachtgever"
+    },
+    {
+      "id": "google-22",
+      "platform": "Google",
+      "naam": "Irma Kerkhof",
+      "sterren": 5,
+      "datum": "± 1 jaar geleden (t.o.v. 2026-09-27)",
+      "tekst": "Super monteurs bij ons zijn de elektricien,loodgieter en monteur voor de keuken geweest.",
+      "status": "letterlijk, ingekort op Google ('… Meer')",
+      "bron": "Google-zoekresultaten, geplakt door opdrachtgever"
+    },
+    {
+      "id": "google-23",
+      "platform": "Google",
+      "naam": "Corry Van Rooij",
+      "sterren": 5,
+      "datum": "± 2 jaar geleden (t.o.v. 2026-09-27)",
+      "tekst": "Super vakman Tot laat gewerkt om keuken af te maken Met deze Keukenmonteur ben je ingoede handen",
+      "status": "letterlijk",
+      "bron": "Google-zoekresultaten, geplakt door opdrachtgever"
+    },
+    {
+      "id": "google-24",
+      "platform": "Google",
+      "naam": "Ay Bol",
+      "sterren": 5,
+      "datum": "± 1 jaar geleden (t.o.v. 2026-09-27)",
+      "tekst": "Betrouwbaar, eerlijk en staat voor zijn werk. Ook toen er iets fout ging, heeft hij zonder probleem het opgelost. Een topper!!",
+      "status": "letterlijk",
+      "bron": "Google-zoekresultaten, geplakt door opdrachtgever"
+    },
+    {
+      "id": "google-25",
+      "platform": "Google",
+      "naam": "Charlotte Dekker",
+      "sterren": 5,
+      "datum": "± 2 jaar geleden (t.o.v. 2026-09-27)",
+      "tekst": "Vriendelijk, houdt zich aan de afspraak. Goed werk en netjes op tijd. Goede prijs-kwaliteit verhouding!",
+      "status": "letterlijk",
+      "bron": "Google-zoekresultaten, geplakt door opdrachtgever"
+    },
+    {
+      "id": "google-26",
+      "platform": "Google",
+      "naam": "NAJOUA IDRISSI",
+      "sterren": 5,
+      "datum": "± 1 jaar geleden (t.o.v. 2026-09-27)",
+      "tekst": "Behulpzaam, het werk wordt netjes afgehandeld. Denkt mee naar oplossingen. Ik raad het zeker aan",
+      "status": "letterlijk",
+      "bron": "Google-zoekresultaten, geplakt door opdrachtgever"
+    },
+    {
+      "id": "google-27",
+      "platform": "Google",
+      "naam": "Carl Kok",
+      "sterren": 5,
+      "datum": "± 1 jaar geleden (t.o.v. 2026-09-27)",
+      "tekst": "Zeer goede service tegen een lage prijs. Aanrader!",
+      "status": "letterlijk",
+      "bron": "Google-zoekresultaten, geplakt door opdrachtgever"
+    },
+    {
+      "id": "google-28",
+      "platform": "Google",
+      "naam": "Charlotte Kolb",
+      "sterren": 5,
+      "datum": "± 2 jaar geleden (t.o.v. 2026-09-27)",
+      "tekst": "Ik ben heel tevreden hoe netjes en snel ze hebben gewerkt echt een aanrader",
+      "status": "letterlijk",
+      "bron": "Google-zoekresultaten, geplakt door opdrachtgever"
+    },
+    {
+      "id": "google-29",
+      "platform": "Google",
+      "naam": "Monica Morak",
+      "sterren": 4,
+      "datum": "± 2 jaar geleden (t.o.v. 2026-09-27)",
+      "tekst": "Prima onze keuken gemonteerd. Vriendelijk en overlegd.",
+      "status": "letterlijk",
+      "bron": "Google-zoekresultaten, geplakt door opdrachtgever"
+    },
+    {
+      "id": "google-30",
+      "platform": "Google",
+      "naam": "Petar",
+      "sterren": 5,
+      "datum": "± 2 jaar geleden (t.o.v. 2026-09-27)",
+      "tekst": "Wij zijn blij met de keukenmonteur",
+      "status": "letterlijk",
+      "bron": "Google-zoekresultaten, geplakt door opdrachtgever"
+    },
+    {
+      "id": "google-31",
+      "platform": "Google",
+      "naam": "Antoinette Langerak",
+      "sterren": 5,
+      "datum": "± 2 jaar geleden (t.o.v. 2026-09-27)",
+      "tekst": "Werk netjes hoor en aardige monteur",
+      "status": "letterlijk",
+      "bron": "Google-zoekresultaten, geplakt door opdrachtgever"
+    },
+    {
+      "id": "google-32",
+      "platform": "Google",
+      "naam": "Pascal de Bloois",
+      "sterren": 5,
+      "datum": "± 1 jaar geleden (t.o.v. 2026-09-27)",
+      "tekst": "Goed werk geleverd",
+      "status": "letterlijk",
+      "bron": "Google-zoekresultaten, geplakt door opdrachtgever"
+    },
+    {
+      "id": "google-33",
+      "platform": "Google",
+      "naam": "Cock van Harskamp",
+      "sterren": 4,
+      "datum": "± 1 week geleden (t.o.v. 2026-09-27)",
+      "tekst": "werkt secuur en heel netjes",
+      "status": "letterlijk, ingekort op Google ('… Meer')",
+      "bron": "Google-zoekresultaten, geplakt door opdrachtgever"
+    },
+    {
+      "id": "google-34",
+      "platform": "Google",
+      "naam": "Hans Boon",
+      "sterren": 5,
+      "datum": "± 1 week geleden (t.o.v. 2026-09-27)",
+      "tekst": "Gerbian heeft bij ons de nieuwe keuken geplaatst en alles naar tevredenheid geïnstalleerd. Gerbian is een top monteur die zijn afspraken altijd nakomt en",
+      "status": "letterlijk, ingekort op Google ('… Meer')",
+      "bron": "Google-zoekresultaten, geplakt door opdrachtgever"
+    },
+    {
+      "id": "google-35",
+      "platform": "Google",
+      "naam": "Manoj Shamlal",
+      "sterren": 5,
+      "datum": "± 1 week geleden (t.o.v. 2026-09-27)",
+      "tekst": "We zijn super goed geholpen met Gerbian, echt een vak man! Communicatie is heel duidelijk en Gerbian heeft opgeleverd volgens afspraak. Dank je wel Gerbian",
+      "status": "letterlijk",
+      "bron": "Google-zoekresultaten, geplakt door opdrachtgever"
+    },
+    {
+      "id": "google-36",
+      "platform": "Google",
+      "naam": "Raymond Worth",
+      "sterren": 4,
+      "datum": "± 1 jaar geleden (t.o.v. 2026-09-27)",
+      "tekst": null,
+      "status": "geen tekst (alleen sterren)",
+      "bron": "Google-zoekresultaten, geplakt door opdrachtgever"
+    },
+    {
+      "id": "google-37",
+      "platform": "Google",
+      "naam": "Hanna Smit",
+      "sterren": 5,
+      "datum": "± 1 jaar geleden (t.o.v. 2026-09-27)",
+      "tekst": null,
+      "status": "geen tekst (alleen sterren)",
+      "bron": "Google-zoekresultaten, geplakt door opdrachtgever"
+    },
+    {
+      "id": "google-38",
+      "platform": "Google",
+      "naam": "Menno Wilcke",
+      "sterren": 4,
+      "datum": "± 2 jaar geleden (t.o.v. 2026-09-27)",
+      "tekst": null,
+      "status": "geen tekst (alleen sterren)",
+      "bron": "Google-zoekresultaten, geplakt door opdrachtgever"
     }
-  ]
+  ],
+  "bedrijfsgegevens": {
+    "naam_google": "Chatleingroup Montage & Installatie Bedrijf",
+    "categorie": "Monteur",
+    "adres": "Industrieweg 73, 2651 BD Berkel en Rodenrijs",
+    "telefoon": "+31 6 49110360",
+    "openingstijden": "ma vanaf 07:00",
+    "profielen": [
+      "Instagram",
+      "Facebook"
+    ],
+    "omschrijving_begin": "Welkom bij Chatlein Montage & Installatie bedrijf. Heeft u een nieuwe keuken gekocht en bent u opzoek naar een installatie bedrijf die het totale project kan aanpakken en uitvoeren? Dan bent u bij ons op het juiste adres!"
+  },
+  "analyse_google": {
+    "aantal_getoond": 38,
+    "sterrenverdeling": {
+      "2": 1,
+      "3": 1,
+      "4": 6,
+      "5": 30
+    },
+    "themas_aantal_reviews": {
+      "netheid/details": 11,
+      "vakmanschap": 14,
+      "communicatie/afspraken": 9,
+      "meedenken/oplossen": 10,
+      "vriendelijk/persoonlijk": 12,
+      "alles in één hand": 7,
+      "snel/vlot": 6,
+      "prijs": 2
+    },
+    "reviews_met_tekst": 35
+  }
 }

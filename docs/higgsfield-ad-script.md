@@ -11,23 +11,34 @@ Uitvoering: **Higgsfield** (image-to-video en camera-presets), met afwerking in 
 Bron: [`data/reviews.json`](../data/reviews.json). Dat bestand bevat 3 Google-reviews (5★, letterlijk), 1 Werkspot-review (vermoedelijk letterlijk) en de samengevatte Werkspot-reviews, waaronder één negatieve. De Werkspot-score is **4,8 / 5**.
 De Google-score en de Google-foto's worden opgehaald met [`scripts/haal_google_reviews.py`](../scripts/haal_google_reviews.py) via de officiële Places API. Daarvoor is een API-sleutel nodig.
 
-### Review-mining: welke thema's komen terug?
+### Google: 4,7 / 5 uit 38 reviews (27-09-2026)
 
-Geteld over 6 bronnen (3 Google, 3 Werkspot-groepen):
+Sterrenverdeling: **30× 5★ · 6× 4★ · 1× 3★ · 1× 2★**. 35 reviews hebben tekst.
 
-| Thema | Keer genoemd | Sterkste bewijs (letterlijk) | Rol in de ad |
-|---|---|---|---|
-| **Communicatie en afspraken** | 4 | "Hele goede communicatie en service. Hij komt echt ze afspraken na." | Vertrouwen |
-| **Netheid en details** | 4 | "Let op details en gaat door tot het echt goed is." | **Kernbelofte** ("Tot alles klopt") |
-| **Persoonlijk en prettig** | 3 | "fijn als mens om in huis te hebben" | Menselijk gezicht |
-| **Problemen oplossen** | 2 | "Is meerdere keren teruggekomen om nalevering te installeren" | Onderscheidend |
-| **Ontzorging en begeleiding** | 2 | "Hij nam ons echt de stress weg." | **Hook-kandidaat** |
-| **Resultaat** | 2 | "Prachtige keuken" · "keuken zeer mooi geworden" | Transformatie |
+### Review-mining: welke thema's komen terug? (35 Google-reviews met tekst)
+
+| Thema | Aantal reviews | Sterkste quote (letterlijk) |
+|---|---|---|
+| **Vakmanschap** | 14 | "Écht vakmanschap schijnt nog te bestaan!" (Rob S.) |
+| **Vriendelijk en persoonlijk** | 12 | "Kenmerkend voor Gerbian: vriendelijk, meedenkend, vakmanschap." (Cees M.) |
+| **Netheid en details** | 11 | "Let op details en gaat door tot het echt goed is." (Tom) |
+| **Meedenken en oplossen** | 10 | "Ook toen er iets fout ging, heeft hij zonder probleem het opgelost." (Ay B.) |
+| **Communicatie en afspraken** | 9 | "Gerbian is een top monteur die zijn afspraken altijd nakomt" (Hans B.) |
+| **Alles in één hand** | 7 | "Alles in een hand." · "Van demonteren stucen tot monteren verliep alles vlot en volgens afspraak" (maria h.) |
+| **Snel en vlot, doorzetten** | 6 | "Super vakman Tot laat gewerkt om keuken af te maken" (Corry V.R.) |
+
+**De sterkste zin uit alle reviews:**
+> **"De montage en plaatsing van onze nieuwe keuken was nog beter dan de nieuwe keuken zelf."** (Rob Schouten, 5★)
+
+Dit is de beste hook voor de ad: een klant zegt dat de montage beter was dan het product zelf. Daarmee is de positionering in één zin bewezen.
+
+**Wat de lagere scores zeggen (2★, 3★, 4★):** in de zichtbare tekst staat vooral lof ("zeer kundige vakmensen", "nemen de tijd om het werk netjes af te krijgen"). Het lastige deel is op Google ingekort ("… Meer"). Eén 4★ noemt dat het inmeten "een beetje lastig" begon. Conclusie: geen perfectieclaims, wel rust, controle en afspraken nakomen.
 
 **Wat dit betekent voor de ad:**
-1. Klanten prijzen vooral **hoe** Gerbian werkt (communicatie, details, doorzetten) en minder alleen het eindresultaat. De ad verkoopt daarom het **proces**, en het resultaat is de beloning.
-2. De sterkste zin komt van een klant, niet van ons: **"gaat door tot het echt goed is."** Die zin wordt het emotionele hoogtepunt.
-3. Er staat een negatieve review over afwerking online. Daarom claimen we geen perfectie, maar laten we controle zien (grepen uitlijnen, nalopen).
+1. Hook = de klantquote "nog beter dan de nieuwe keuken zelf".
+2. Het bewijs van de kernbelofte: "gaat door tot het echt goed is" en "Tot laat gewerkt om keuken af te maken".
+3. Onderscheidend is het totaalpakket: "Alles in een hand", met stucen, tegelzetten en elektra genoemd in reviews. Toon dit **alleen als "volgens klanten"** of na bevestiging van Gerbian, want één review noemt een "aanbevolen loodgieter en elektricien" (partners).
+4. Getal op de eindkaart: **4,7 ★ uit 38 Google-reviews**. Dat is sterker en actueler dan alleen Werkspot.
 
 ---
 
@@ -46,7 +57,7 @@ TXT = tekst in beeld (toevoegen in de montage, **niet** door AI laten genereren)
 
 | # | Tijd | Beeld | Camera (Higgsfield-preset) | TXT | VO | SFX |
 |---|---|---|---|---|---|---|
-| 1 | 0:00–0:02 | Hal vol keukendozen | **FPV Drone** / **Crash Zoom In** | NIEUWE KEUKEN GEKOCHT? | "Nieuwe keuken gekocht?" | whoosh + kick |
+| 1 | 0:00–0:02 | Hal vol keukendozen | **FPV Drone** / **Crash Zoom In** | ★★★★★ "Nog beter dan de nieuwe keuken zelf." | "Nieuwe keuken gekocht?" | whoosh + kick |
 | 2 | 0:02–0:03,5 | Kale wand, leidingen uit de muur | **Whip Pan** | EN NU? | – | whip |
 | 3 | 0:03,5–0:05,5 | Gerbian stapt binnen met gereedschapskist, tegenlicht | **Super Dolly In**, laag standpunt | GERBIAN CHATLEIN · keukenmonteur | "Dan begint het echte werk." | voetstap, kist neer |
 | 4 | 0:05,5–0:07 | Laserlijn schuift over de wand (macro) | **Dolly Left** / Snorricam-achtig | METEN | "Ik meet…" | laser-piep |
@@ -57,14 +68,14 @@ TXT = tekst in beeld (toevoegen in de montage, **niet** door AI laten genereren)
 | 9 | 0:13–0:15 | Greep wordt met maat uitgelijnd, daarna een rij grepen op één lijn | **Tracking** langs de fronten | AFWERKEN | "…en werk af." | scharnier-klik |
 | 10 | 0:15–0:17 | **Drop:** van kale ruimte naar af, zelfde standpunt | **Hyperlapse** / start- en eindframe | – | – | impact + stilte |
 | 11 | 0:17–0:19,5 | Detail afgewerkte keuken, verlichting gaat aan | **Slow Dolly Out** | ★★★★★ "Hij nam ons echt de stress weg." | – | licht-klik, zachte muziek |
-| 12 | 0:19,5–0:22 | Hand strijkt langs werkbladrand / kitnaad | **Dolly Right**, macro | ★★★★★ "Is meerdere keren teruggekomen om nalevering te installeren." | – | – |
+| 12 | 0:19,5–0:22 | Hand strijkt langs werkbladrand / kitnaad | **Dolly Right**, macro | ★★★★★ "Ook toen er iets fout ging, heeft hij zonder probleem het opgelost." | – | – |
 | 13 | 0:22–0:25 | Koffie wordt gezet, kopje op werkblad, bewoners genieten | **Orbit** (langzaam) | ★★★★★ "Let op details en gaat door **tot het echt goed is.**" | "Dat zeg ik niet. Dat zeggen mijn klanten." | koffiemachine |
-| 14 | 0:25–0:30 | Eindkaart: logo, 4,8/5 Werkspot, WhatsApp | graphic (geen AI) | NIEUWE KEUKEN GEPLAND? · APP GERBIAN · **06 49 11 03 60** · @chatleingroup | "Nieuwe keuken gepland? Stuur me een appje." | logo-tik |
+| 14 | 0:25–0:30 | Eindkaart: logo, **4,7 ★ · 38 Google-reviews**, WhatsApp | graphic (geen AI) | NIEUWE KEUKEN GEPLAND? · APP GERBIAN · **06 49 11 03 60** · @chatleingroup | "Nieuwe keuken gepland? Stuur me een appje." | logo-tik |
 
 **Volledige VO (± 40 woorden):**
 > Nieuwe keuken gekocht? Dan begint het echte werk. Ik meet, monteer, pas en werk af. [drop, stilte] … Dat zeg ik niet. Dat zeggen mijn klanten. Nieuwe keuken gepland? Stuur me een appje.
 
-**Bij elke review staat klein:** "5 sterren · Google-review". De bewoners in shot 13 worden **niet** als de reviewers gepresenteerd. De quote staat los in beeld, niet bij hun gezicht.
+**Bij elke review staat klein:** "5 sterren · Google-review" (eventueel met voornaam + initiaal, bijv. "Rob S."). Shot 1 toont de quote van Rob Schouten als hook; de volledige zin is "De montage en plaatsing van onze nieuwe keuken was nog beter dan de nieuwe keuken zelf." Inkorten met behoud van betekenis mag, maar toon dan de volledige zin in de caption. De bewoners in shot 13 worden **niet** als de reviewers gepresenteerd. De quote staat los in beeld, niet bij hun gezicht.
 
 ---
 
